@@ -155,7 +155,7 @@ swiper-slide img {
 .project-section {
     border-radius: 20px;
     border: 1px solid #ffffff !important;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
@@ -272,120 +272,149 @@ swiper-slide img {
 /* Contact section */
 
 .contact-section {
-	padding-top: 80px;
-	padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .contact-text h2 {
-	font-size: 44px;
-	color: #19191a;
-	margin-bottom: 24px;
+    font-size: 44px;
+    color: #19191a;
+    margin-bottom: 24px;
 }
 
 .contact-text p {
-	color: #707079;
+    color: #707079;
 }
 
 .contact-text table tbody tr td {
-	font-size: 16px;
-	color: #19191a;
-	line-height: 36px;
-	font-weight: 500;
+    font-size: 16px;
+    color: #19191a;
+    line-height: 36px;
+    font-weight: 500;
 }
 
 .contact-text table tbody tr td.c-o {
-	color: #707079;
-	width: 75px;
+    color: #707079;
+    width: 75px;
 }
 
 .contact-form input {
-	width: 100%;
-	height: 50px;
-	border: 1px solid #e1e1e1;
-	font-size: 16px;
-	color: #aaaab3;
-	padding-left: 25px;
-	margin-bottom: 28px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    color: #aaaab3;
+    padding-left: 25px;
+    margin-bottom: 28px;
 }
 
 .contact-form input::-webkit-input-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form input::-moz-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form input:-ms-input-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form input::-ms-input-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form input::placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form textarea {
-	width: 100%;
-	height: 150px;
-	border: 1px solid #e1e1e1;
-	font-size: 16px;
-	color: #aaaab3;
-	padding-left: 25px;
-	padding-top: 12px;
-	margin-bottom: 33px;
-	resize: none;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    color: #aaaab3;
+    padding-left: 25px;
+    padding-top: 12px;
+    margin-bottom: 33px;
+    resize: none;
 }
 
-.contact-box{
+.contact-box {
     padding: 50px !important;
     border-radius: 20px;
     border: 1px solid #ffffff !important;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form textarea::-webkit-input-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form textarea::-moz-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form textarea:-ms-input-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form textarea::-ms-input-placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form textarea::placeholder {
-	color: #aaaab3;
+    color: #aaaab3;
 }
 
 .contact-form button {
-	font-size: 13px;
-	font-weight: 700;
-	text-transform: uppercase;
-	/* color: #ffffff; */
-	letter-spacing: 2px;
-	/* background:  var(--color-primary); */
-	border: none;
-	padding: 14px 34px 13px;
-	display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* color: #ffffff; */
+    letter-spacing: 2px;
+    /* background:  var(--color-primary); */
+    border: none;
+    padding: 14px 34px 13px;
+    display: inline-block;
 }
 
 .map {
-	height: 470px;
-	-webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
-	margin-top: 75px;
+    height: 470px;
+    -webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+    margin-top: 75px;
 }
 
 .map iframe {
-	width: 100%;
+    width: 100%;
+}
+
+
+/* Loader styling */
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #007bff;
 }

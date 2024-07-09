@@ -20,75 +20,84 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top container">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="landing-carosel">
-        <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
-            <!-- <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide> -->
-
-            <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
-                <swiper-slide>
-                  <img src="https://via.placeholder.com/1920x1080" alt="Placeholder Image">
-                  <div class="slide-content">Content for Slide 1</div>
-                </swiper-slide>
-                <swiper-slide>
-                  <img src="https://via.placeholder.com/1920x1080" alt="Placeholder Image">
-                  <div class="slide-content">Content for Slide 2</div>
-                </swiper-slide>
-                <swiper-slide>
-                  <img src="https://via.placeholder.com/1920x1080" alt="Placeholder Image">
-                  <div class="slide-content">Content for Slide 3</div>
-                </swiper-slide>
-              </swiper-container>
-          </swiper-container>
-    </div>
-
-
-
-    <footer class="mt-75">
-        <hr class="container">
-        <div class="container footer-content ptb-50">
-            <p>&copy; 2024 <a href="http://dharstec.com/" target="_blank">Dharstec Solutions</a>. All rights reserved.</p>
-            <div class="d-flex justify-content-between ">
-                <p><a href="">TERMS & CONDITION</a></p>
-                <p><a href="">PRIVACY POLICY</a></p>
-            </div>
+    <div class="loader" id="loader">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
-    </footer>
+        <p>Loading...</p>
+      </div>
+
+    <div id="content">
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top container">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="landing-carosel">
+            <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
+                <!-- <swiper-slide>Slide 1</swiper-slide>
+                <swiper-slide>Slide 2</swiper-slide>
+                <swiper-slide>Slide 3</swiper-slide> -->
+    
+                <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
+                    <swiper-slide>
+                      <img src="https://via.placeholder.com/1920x1080" alt="Placeholder Image">
+                      <div class="slide-content">Content for Slide 1</div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="https://via.placeholder.com/1920x1080" alt="Placeholder Image">
+                      <div class="slide-content">Content for Slide 2</div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="https://via.placeholder.com/1920x1080" alt="Placeholder Image">
+                      <div class="slide-content">Content for Slide 3</div>
+                    </swiper-slide>
+                  </swiper-container>
+              </swiper-container>
+        </div>
+    
+    
+    
+        <footer class="mt-75">
+            <hr class="container">
+            <div class="container footer-content ptb-50">
+                <p>&copy; 2024 <a href="http://dharstec.com/" target="_blank">Dharstec Solutions</a>. All rights reserved.</p>
+                <div class="d-flex justify-content-between ">
+                    <p><a href="">TERMS & CONDITION</a></p>
+                    <p><a href="">PRIVACY POLICY</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <!-- jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -97,15 +106,7 @@
 
     <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script>
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.navbar').addClass('scrolled');
-            } else {
-                $('.navbar').removeClass('scrolled');
-            }
-        });
-    </script>
+    <script src="common.js"></script>
 
 </body>
 
