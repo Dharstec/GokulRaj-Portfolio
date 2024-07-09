@@ -10,9 +10,23 @@
 }
 
 
-/* body {
-    background-color: aquamarine !important;
-} */
+body {
+    /* letter-spacing: .1rem; */
+    color: #626d86;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #000000;
+}
+a{
+    color: #626d86 !important;
+    text-decoration: none;
+}
+a:hover{
+    color: #4d576b;
+}
+td{
+    color: #626d86 !important;
+}
 
 hr.container {
     background-color: #ffffff !important;
@@ -94,7 +108,19 @@ hr.container {
 .default-spacing{
     letter-spacing: .1rem;
 }
+.color-1{
+    color: #626d86 !important;
+}
+.bg-grey{
+    background-color: #eef0f6;
+}
+.button-default{
+    background-color: #000000 !important;
+    color: #ffffff;
+    letter-spacing: .1rem;
+}
 
+/* navbar */
 .navbar.fixed-top {
     /* width: 90vw !important; */
     transition: background-color 0.5s ease;
@@ -155,6 +181,12 @@ swiper-slide img {
     object-fit: cover;
 }
 
+/* landin section */
+.landing-section{
+    height: 63vh;
+
+}
+
 .slide-content {
     position: absolute;
     top: 50%;
@@ -166,9 +198,10 @@ swiper-slide img {
 }
 
 .project-section {
-    border-radius: 20px;
-    border: 1px solid #ffffff !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* border-radius: 20px; */
+    /* border: 1px solid #ffffff !important; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+    background-color: #ffffff;
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
@@ -187,22 +220,46 @@ footer p a{
     text-decoration: none;
     color: #626d86;
 }
-footer p a:hover{
+/* footer p a:hover{
     color: #4d576b;
-}
-
-
-/* Card-section */
+} */
 
 /* .card-custom {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
 }
 
 .card-custom img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: right center;
+}
+
+.card-custom img:hover {
+    transform: skewY(-5deg);
+}
+
+.card-custom::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url('https://via.placeholder.com/20') no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(0.8);
+}
+
+.card-custom:hover::before {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .card-cont {
@@ -228,7 +285,6 @@ footer p a:hover{
     margin-top: 10px;
 } */
 
-
 .card-custom {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -241,22 +297,18 @@ footer p a:hover{
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-    transform-origin: right center;
-    /* Set the pivot point to the right side */
+    transform-origin: center center; /* Set the pivot point to the center */
 }
 
-.card-custom img:hover {
-    transform: skewY(-5deg);
-    /* Skew the image */
+.card-custom:hover img {
+    transform: scale(1.05); /* Scale up the image by 5% */
 }
 
 .card-custom::before {
     content: "";
     position: absolute;
-    top: 15px;
-    /* Adjust as needed */
-    right: 15px;
-    /* Adjust as needed */
+    top: 15px; /* Adjust as needed */
+    right: 15px; /* Adjust as needed */
     width: 20px;
     height: 20px;
     background: url('https://via.placeholder.com/20') no-repeat center center;
@@ -313,9 +365,14 @@ footer p a:hover{
 
 .contact-text table tbody tr td {
     font-size: 16px;
-    color: #19191a;
-    line-height: 36px;
+    /* line-height: 36px; */
     font-weight: 500;
+}
+
+.contact-text table tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 12px !important;
 }
 
 .contact-text table tbody tr td.c-o {
@@ -367,9 +424,11 @@ footer p a:hover{
 
 .contact-box {
     padding: 50px !important;
-    border-radius: 20px;
-    border: 1px solid #ffffff !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    min-height: 70vh !important;
+    /* border-radius: 20px; */
+    /* border: 1px solid #ffffff !important; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
 }
 
 .contact-form textarea::-webkit-input-placeholder {
@@ -404,6 +463,13 @@ footer p a:hover{
     display: inline-block;
 }
 
+.contact-icon{
+    font-size: 15px !important;
+    color: #626d86 !important;
+}
+.contact-icon:hover{
+    color: #4d576b !important;
+}
 .map {
     height: 470px;
     -webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
