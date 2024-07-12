@@ -26,11 +26,18 @@
 </head>
 
 <body>
-    <div class="loader" id="loader">
+    <!-- <div class="loader" id="loader">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
         </div>
         <p>Loading...</p>
+    </div> -->
+    <div class="loader" id="loader">
+        <!-- <p>Loading...</p> -->
+         <h3 class="loader-title"><b>GOKHUL</b></h3>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
 
     <div id="content">
@@ -91,18 +98,22 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td class="c-o"><a class="contact-icon" href="mailto:gokhulraj6200@gmail.com"
-                                                rel="noopener noreferrer">
+                                        <td class="c-o"><a class="contact-icon" href="mailto:gokhulraj6200@gmail.com">
                                                 <i class="fas fa-envelope fa-2x"></i>
                                             </a></td>
-                                        <td class="pb-2">gokhulraj6200@gmail.com</td>
+                                        <td class="pb-2"><a href="mailto:gokhulraj6200@gmail.com">
+                                            gokhulraj6200@gmail.com
+                                        </a></td>
                                     </tr>
                                     <tr>
                                         <td class="c-o"><a class="contact-icon" href="mailto:gr.ravikumar@stud.fh-sm.de"
                                                 rel="noopener noreferrer">
                                                 <i class="fas fa-envelope fa-2x"></i> <!-- Email icon -->
                                             </a></td>
-                                        <td>mailto:gr.ravikumar@stud.fh-sm.de</td>
+                                        <!-- <td>gr.ravikumar@stud.fh-sm.de</td> -->
+                                        <td class="pb-2"><a href="mailto:gr.ravikumar@stud.fh-sm.de">
+                                            gr.ravikumar@stud.fh-sm.de
+                                        </a></td>
                                     </tr>
                                     <tr>
                                         <td class="c-o"> <a class="contact-icon"
@@ -110,20 +121,28 @@
                                                 target="_blank" rel="noopener noreferrer">
                                                 <i class="fab fa-linkedin fa-2x"></i> <!-- LinkedIn icon -->
                                             </a></td>
-                                        <td>Gokhul Raj Ravikumar</td>
+                                        <!-- <td>Gokhul Raj Ravikumar</td> -->
+                                        <td class="pb-2"><a href="https://www.linkedin.com/in/gokhul-raj-ravikumar-483383196/"
+                                            target="_blank" rel="noopener noreferrer">
+                                            Gokhul Raj Ravikumar
+                                        </a></td>
                                     </tr>
                                     <tr>
                                         <td class="c-o"> <a class="contact-icon" href="https://github.com/Gokhulraj6200"
                                                 target="_blank" rel="noopener noreferrer">
                                                 <i class="fab fa-github fa-2x"></i> <!-- GitHub icon -->
                                             </a></td>
-                                        <td>Gokhulraj6200</td>
+                                        <!-- <td>Gokhulraj6200</td> -->
+                                        <td class="pb-2"><a href="https://github.com/Gokhulraj6200"
+                                            target="_blank" rel="noopener noreferrer">
+                                            Gokhulraj6200
+                                        </a></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="col-lg-6 offset-lg-1">
+                    <!-- <div class="col-lg-6 offset-lg-1">
                         <form id="contactForm" class="contact-form">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -146,6 +165,29 @@
                                     <div class="invalid-feedback">Message is required.</div>
                                     <button type="submit"  class="btn btn-primary mt-3 button-default">Submit
                                         Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> -->
+                    <div class="col-lg-6 offset-lg-1">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" id="name" placeholder="Your Name" class="form-control" required>
+                                    <div class="invalid-feedback">Name is required.</div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" id="email" placeholder="Your Email" class="form-control" required>
+                                    <div class="invalid-feedback">Valid email is required.</div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <input type="text" id="phoneNo" placeholder="Phone Number" class="form-control" required>
+                                    <div class="invalid-feedback">Enter Your Phone Number</div>
+                                </div>
+                                <div class="col-lg-12 mt-3">
+                                    <textarea id="message" placeholder="Your Message" class="form-control" required></textarea>
+                                    <div class="invalid-feedback">Message is required.</div>
+                                    <button type="submit" class="btn btn-primary mt-3 button-default">Submit Now</button>
                                 </div>
                             </div>
                         </form>
@@ -182,6 +224,10 @@
 
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
 </body>
 
