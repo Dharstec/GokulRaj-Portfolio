@@ -58,10 +58,13 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link nav-icon" href="#"><i class="fab fa-linkedin"></i></a>
+                            <a class="nav-link nav-icon" target="_blank"
+                                href="https://www.linkedin.com/in/gokhul-raj-ravikumar-483383196/"><i
+                                    class="fab fa-linkedin"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-icon" href="#"><i class="fab fa-github"></i></a>
+                            <a class="nav-link nav-icon" target="_blank" href="https://github.com/Gokhulraj6200"><i
+                                    class="fab fa-github"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -94,23 +97,26 @@
                                             </a></td>
                                         <td class="pb-2">gokhulraj6200@gmail.com</td>
                                     </tr>
-                                    <tr >
+                                    <tr>
                                         <td class="c-o"><a class="contact-icon" href="mailto:gr.ravikumar@stud.fh-sm.de"
-                                            rel="noopener noreferrer">
-                                            <i class="fas fa-envelope fa-2x"></i> <!-- Email icon -->
-                                        </a></td>
-                                    <td>mailto:gr.ravikumar@stud.fh-sm.de</td>
+                                                rel="noopener noreferrer">
+                                                <i class="fas fa-envelope fa-2x"></i> <!-- Email icon -->
+                                            </a></td>
+                                        <td>mailto:gr.ravikumar@stud.fh-sm.de</td>
                                     </tr>
-                                    <tr >
-                                        <td class="c-o"> <a class="contact-icon" href="https://www.linkedin.com/in/gokhul-raj-ravikumar-483383196/" target="_blank" rel="noopener noreferrer">
-                                            <i class="fab fa-linkedin fa-2x"></i> <!-- LinkedIn icon -->
-                                          </a></td>
+                                    <tr>
+                                        <td class="c-o"> <a class="contact-icon"
+                                                href="https://www.linkedin.com/in/gokhul-raj-ravikumar-483383196/"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-linkedin fa-2x"></i> <!-- LinkedIn icon -->
+                                            </a></td>
                                         <td>Gokhul Raj Ravikumar</td>
                                     </tr>
                                     <tr>
-                                        <td class="c-o">  <a class="contact-icon" href="https://github.com/Gokhulraj6200" target="_blank" rel="noopener noreferrer">
-                                            <i class="fab fa-github fa-2x"></i> <!-- GitHub icon -->
-                                          </a></td>
+                                        <td class="c-o"> <a class="contact-icon" href="https://github.com/Gokhulraj6200"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-github fa-2x"></i> <!-- GitHub icon -->
+                                            </a></td>
                                         <td>Gokhulraj6200</td>
                                     </tr>
                                 </tbody>
@@ -130,7 +136,7 @@
                                     <div class="invalid-feedback">Valid email is required.</div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <input type="email" id="email" placeholder="Phone Number" class="form-control"
+                                    <input type="text" id="phoneNo" placeholder="Phone Number" class="form-control"
                                         required>
                                     <div class="invalid-feedback">Enter Your Phone Number</div>
                                 </div>
@@ -138,7 +144,8 @@
                                     <textarea id="message" placeholder="Your Message" class="form-control"
                                         required></textarea>
                                     <div class="invalid-feedback">Message is required.</div>
-                                    <button type="submit" class="btn btn-primary mt-3 button-default">Submit Now</button>
+                                    <button type="submit"  class="btn btn-primary mt-3 button-default">Submit
+                                        Now</button>
                                 </div>
                             </div>
                         </form>
@@ -153,7 +160,7 @@
             <div class="container footer-content ptb-50 default-spacing">
                 <p>&copy; 2024 All rights reserved.</p>
                 <div class="d-flex justify-content-end ">
-                    <p class="footer-link"><a href="">www.gokulraj.com</a></p>
+                    <p><a class="footer-link" href="index.html">www.gokulraj.com</a></p>
                 </div>
             </div>
         </footer>
@@ -166,7 +173,12 @@
 
     <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- script -->
     <script src="common.js"></script>
+    <script src="contactform.js"></script>
+    <!-- SMTPJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

@@ -43,6 +43,11 @@ hr.container {
     padding-bottom: 75px;
 }
 
+.ptb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .prl-100 {
     padding-right: 100px;
     padding-left: 100px;
@@ -114,6 +119,9 @@ hr.container {
 .bg-grey{
     background-color: #eef0f6;
 }
+.bg-white{
+    background-color: #ffffff;
+}
 .button-default{
     background-color: #000000 !important;
     color: #ffffff;
@@ -131,14 +139,23 @@ hr.container {
     background-color: white !important;
 }
 
-.navbar .nav-link,
-.navbar .navbar-brand {
-    color: #000;
+.navbar .nav-link {
+    color: #000000;
     letter-spacing: .1rem;
+}
+.navbar-brand,.nav-icon{
+    color: #000000 !important;
+}
+.navbar-brand:hover,.nav-icon:hover{
+    color: #394357  !important;
 }
 
 .link-cont{
     font-size: 12px !important;
+    color: #626d86 !important;
+}
+.link-cont:hover{
+    color: #394357 !important;
 }
 
 .nav-icon{
@@ -220,71 +237,17 @@ footer p a{
     text-decoration: none;
     color: #626d86;
 }
-/* footer p a:hover{
-    color: #4d576b;
-} */
 
-/* .card-custom {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+.footer-link:hover{
+    color: #394357 !important;
 }
 
-.card-custom img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: right center;
+
+/* Project section */
+
+.project-para{
+    text-align: justify;
 }
-
-.card-custom img:hover {
-    transform: skewY(-5deg);
-}
-
-.card-custom::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 20px;
-    height: 20px;
-    background: url('https://via.placeholder.com/20') no-repeat center center;
-    background-size: contain;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    transform: scale(0.8);
-}
-
-.card-custom:hover::before {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.card-cont {
-    padding: 15px;
-}
-
-.card-title {
-    margin: 15px 0 5px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.card-text {
-    text-align: center;
-    color: #666;
-}
-
-.card-meta {
-    text-align: center;
-    font-size: 0.875rem;
-    color: #999;
-    margin-top: 10px;
-} */
-
 .card-custom {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
