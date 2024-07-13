@@ -58,6 +58,11 @@ hr.container {
     padding-bottom: 50px;
 }
 
+.ptb-25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .prl-100 {
     padding-right: 100px;
     padding-left: 100px;
@@ -312,7 +317,7 @@ footer p a {
     justify-content: flex-end;
 }
 .home-card-content-down-para{
-    /* max-width: 100px; */
+    max-width: 200px;
     text-align: right;
 }
 @media (max-width: 992px) {
@@ -352,17 +357,17 @@ footer p a {
     background-color: #ffffff;
     padding-left: 50px !important;
     padding-right: 50px !important;
+    position: relative;
+    right: 0;
 }
 
 .overlay-container {
     width: max-content;
     position: relative;
     top: -75px; 
+    padding: 0px !important;
     margin-left: auto !important;
     z-index: 10;
-}
-.custom-container{
-    min-width: 90vw !important;
 }
 .project-para {
     text-align: justify;
