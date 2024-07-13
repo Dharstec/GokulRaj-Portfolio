@@ -362,12 +362,13 @@ footer p a {
 }
 
 .overlay-container {
-    width: max-content;
     position: relative;
     top: -75px; 
-    padding: 0px !important;
-    margin-left: auto !important;
+    /* padding: 0px !important;
+    margin-left: auto !important; */
     z-index: 10;
+    /* display: flex !;
+    justify-content: center; */
 }
 .project-para {
     text-align: justify;
