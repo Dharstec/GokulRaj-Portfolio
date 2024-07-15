@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Poppins", sans-serif; */
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-    /* overflow: hidden; */
 }
 
 
@@ -14,6 +12,7 @@ body {
     /* letter-spacing: .1rem; */
     color: #626d86;
     background-color: #eef0f6 !important;
+    overflow-x: hidden !important;
 }
 
 h1,
@@ -58,9 +57,14 @@ hr.container {
     padding-bottom: 50px;
 }
 
-.ptb-25{
+.ptb-25 {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.ptb-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .prl-100 {
@@ -143,8 +147,10 @@ hr.container {
 }
 
 /* navbar */
+
 .navbar.fixed-top {
-    /* width: 90vw !important; */
+    padding-left: 20px;
+    padding-right: 20px;
     transition: background-color 0.5s ease;
     border-bottom: 1px solid #ffffff;
 }
@@ -187,6 +193,13 @@ a {
     /* color: inherit !important; */
 }
 
+@media screen and (max-width:768px) {
+    .navbar.fixed-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
 
 /* a:hover,
 a:focus {
@@ -219,10 +232,26 @@ swiper-slide img {
 }
 
 /* landin section */
-.landing-section {
-    height: 63vh;
 
+.landing-section {
+    max-height: 648px;
+    width: 100vw;
+    padding-left: 0px !important;
+    background-color: #1c1627 !important;
 }
+
+.landing-section img {
+    opacity: 0.9;
+    width: 100vw;
+    max-height: 648px;
+    object-fit: cover;
+    position: relative;
+}
+/* .proj-title{
+    position: absolute;
+    left: auto;
+    top: auto;
+} */
 
 .slide-content {
     position: absolute;
@@ -261,49 +290,53 @@ footer p a {
     border-radius: 23px !important;
     border: none !important;
     padding: 10px !important;
-    font-size: 14px !important;
+    font-size: 12px !important;
 }
 
 /* Home page */
 
-.left-right{
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-}
-
-.title-left{
+.title-left {
     font-size: 42px;
     font-weight: 600;
 }
 
-.image-container{
-   height: 450px;
+.image-container {
+    height: 450px;
     width: 100%;
 }
-.image-container img{
+
+.image-container img {
     max-height: 450px;
     width: 100%;
     object-fit: cover;
 }
+
 .home-cards {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
 }
+
 .home-card {
     min-height: 300px;
     padding: 50px 25px 50px 25px;
-    flex: 1 0 25%; /* Four cards in a row for large screens */
+    flex: 1 0 25%;
+    /* Four cards in a row for large screens */
     border: 1px solid #d3d3d3;
     margin: 0;
     transition: transform 0.2s ease-in, background-color 0.3s ease-in-out;
 }
+
 .home-card:hover {
-    transform: scale(1.05); /* Enlarges the card on hover */
-    background-color: white; /* Changes background color on hover */
-    z-index: 1; /* Makes sure the card is above others when hovered */
+    transform: scale(1.05);
+    /* Enlarges the card on hover */
+    background-color: white;
+    /* Changes background color on hover */
+    z-index: 1;
+    /* Makes sure the card is above others when hovered */
 }
+
 .home-card-content {
     /* padding: 20px; */
     height: 100%;
@@ -311,42 +344,96 @@ footer p a {
     display: grid;
     grid-row: 1fr 3fr;
 }
-.home-card-content-down{
+
+.home-card-content-down {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-.home-card-content-down-para{
+
+.home-card-content-down-para {
     max-width: 200px;
     text-align: right;
 }
-@media (max-width: 992px) {
-    .home-card {
-        flex: 1 0 50%; /* Two cards in a row for medium screens */
-    }
-}
-@media (max-width: 768px) {
-    .home-card {
-        flex: 1 0 100%; /* One card per row for small screens */
-    }
+
+.left-right {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    position: relative;
 }
 
-.left-scroll{
-    padding: 0px 50px 0px 50px !important;
+.left-scroll {
+    padding: 50px !important;
     border-right: solid 1px #d3d3d3;
 }
-.right-scroll{
+
+.right-scroll {
     /* padding-top: 50px !important; */
     border-top: solid 1px #d3d3d3;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
 }
-.post{
+
+.left-scroll {
+    position: relative;
+    top: 0;
+    transition: top 0.3s;
+}
+.fixed {
+    position: fixed;
+    top: 10vh; /* Adjust this value as needed */
+    width: inherit; /* Ensures the fixed element doesn't shrink */
+}
+.right-scroll {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.post {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 992px) {
+    .home-card {
+        flex: 1 0 50%;
+        /* Two cards in a row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .title-left {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .left-right {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        text-align: justify;
+    }
+
+    .section-about {
+        gap: 30px;
+        width: 100%;
+    }
+
+    .image-container {
+        offset: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        margin-left: 15px;
+        max-height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 
@@ -363,13 +450,14 @@ footer p a {
 
 .overlay-container {
     position: relative;
-    top: -75px; 
+    top: -75px;
     /* padding: 0px !important;
     margin-left: auto !important; */
     z-index: 10;
     /* display: flex !;
     justify-content: center; */
 }
+
 .project-para {
     text-align: justify;
 }
@@ -483,8 +571,9 @@ footer p a {
     padding-left: 25px;
     margin-bottom: 28px;
 }
-.contact-head{
-    font-size: 18px ;
+
+.contact-head {
+    font-size: 18px;
     letter-spacing: .1rem !important;
     font-weight: 500;
 }
@@ -642,7 +731,6 @@ footer p a {
     transition: width 0.6s ease;
 }
 
-.loader-title{
+.loader-title {
     letter-spacing: .1rem;
 }
-

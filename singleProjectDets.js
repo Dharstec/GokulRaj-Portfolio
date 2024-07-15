@@ -55,7 +55,7 @@ const project = projects[id];
 
 if (project) {
     // Set content on the page
-    document.getElementById('head-title').innerHTML = project.title;
+    // document.getElementById('head-title').innerHTML = project.title;
     document.getElementById('project-title').innerHTML = project.title;
     document.getElementById('project-desc').innerHTML = project.desc;
     // document.getElementById('project-image').src = project.image;
