@@ -94,17 +94,14 @@
     <div class="overlay-container d-flex justify-content-center">
       <div class="container project-section d-flex flex-column justify-content-center ptb-100">
         <h2 class="text-center pt-3 pb-5">PROJECTS</h2>
+        <div class="d-block d-sm-none mb-4 text-center">
+          <button class="btn btn-primary mx-2" onclick="filterCards('all')">All</button>
+          <button class="btn btn-primary mx-2" onclick="filterCards('DESIGN')">Design</button>
+          <button class="btn btn-primary mx-2" onclick="filterCards('STRATEGY')">Strategy</button>
+          <button class="btn btn-primary mx-2" onclick="filterCards('MARKETING')">Marketing</button>
+      </div>
         <div class="row">
           <!-- <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card-custom">
-                      <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
-                      <div class="card-cont">
-                        <div class="card-meta">DESIGN &nbsp;&nbsp; 5.10.2021</div>
-                        <h5 class="card-title">CONTENT 1</h5>
-                      </div>
-                    </div>
-                  </div> -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card-custom" onclick="showSingleProjDets(1)">
               <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
               <div class="card-cont">
@@ -238,9 +235,99 @@
                 <h5 class="card-title">CONTENT 15</h5>
               </div>
             </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">URDF and ROS-Based Control</div>
+                <h5 class="card-title">Design and Simulation of RB-1 Robotnik Mobile Robot</h5>
+              </div>
+            </div>
           </div>
-          
-          <!-- Add more cards as needed -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">C++, ROS, and the CVUI library</div>
+                <h5 class="card-title">User-Friendly GUI for Robot Teleoperation and Monitoring</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">Obstacle Avoidance algorithm</1div>
+                <h5 class="card-title">Autonomous Obstacle Avoidance with Turtlebot3 in Citylabs</h5>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">DESIGN &nbsp;&nbsp; 5.10.2021</div>
+                <h5 class="card-title">CONTENT 4</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">DESIGN &nbsp;&nbsp; 5.10.2021</div>
+                <h5 class="card-title">CONTENT 5</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">DESIGN &nbsp;&nbsp; 5.10.2021</div>
+                <h5 class="card-title">CONTENT 6</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">DESIGN &nbsp;&nbsp; 5.10.2021</div>
+                <h5 class="card-title">CONTENT 7</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">DESIGN &nbsp;&nbsp; 5.10.2021</div>
+                <h5 class="card-title">CONTENT 8</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="STRATEGY">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">DESIGN &nbsp;&nbsp; 5.10.2021</div>
+                <h5 class="card-title">CONTENT 9</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card-custom" onclick="window.location.href='project1.html'" data-category="MARKETING">
+              <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+              <div class="card-cont">
+                <div class="card-meta color-1">DESIGN &nbsp;&nbsp; 5.10.2021</div>
+                <h5 class="card-title">CONTENT 10</h5>
+              </div>
+            </div>
+          </div> -->
+          </div>
         </div>
       </div>
     </div>

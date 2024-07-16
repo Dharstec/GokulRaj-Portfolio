@@ -6,11 +6,6 @@ $(window).scroll(function () {
     }
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     var loader = document.getElementById('loader');
-//     loader.classList.add('hidden');
-// });
-
 function showSingleProjDets(id) {
     const url = new URL('singleProjectDets.html', window.location.origin);
     url.searchParams.append('id', id);
@@ -29,7 +24,18 @@ function simulateProgress() {
         progressBar.style.width = width + '%';
         progressBar.setAttribute('aria-valuenow', width);
       }
-    }, 30);
+    }, 10);
   }
 
   document.addEventListener('DOMContentLoaded', simulateProgress);
+
+  function filterCards(category) {
+    var cards = document.querySelectorAll('.card-item');
+    cards.forEach(function(card) {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
