@@ -676,6 +676,16 @@ footer p a {
     background-position: center;
     background-repeat: no-repeat;
 }
+.landing-title{
+    width: 80%;
+    /* font-size: 30px; */
+}
+.project-content{
+    text-align: justify !important;
+}
+.section-blog{
+    padding: 75px !important;
+}
 
 /* Contact section */
 

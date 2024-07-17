@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokhul Raj</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Mosterrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <h3 class="loader-title"><b>LOADING</b></h3>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div id="content">
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top container">
+                <a class="navbar-brand" href="index.html">GOKUL RAJ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="projects.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" target="_blank"
+                                href="https://www.linkedin.com/in/gokhul-raj-ravikumar-483383196/"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" target="_blank" href="https://github.com/Gokhulraj6200"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div
+            class="container-fluid landing-section-proj bg-grey-landing d-flex justify-content-center align-items-center">
+            <div class="landing-content d-flex flex-column justify-content-center align-items-center">
+                <h1 class="landing-title text-center">Autonomous Obstacle Avoidance with Turtlebot3 in Citylabs</h1>
+                <p>This project implements the Obstacle Avoidance algorithm for precise robot control.
+                </p>
+                <p><b>Date: </b>24 march 2024</p>
+                <p>GIT LINK - <a target="_blank" href="https://github.com/Gokhulraj6200/citylab_project.git">Link 1</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="overlay-container d-flex flex-column justify-content-center">
+            <div class="container  d-flex justify-content-center bg-white ptb-75 prl-50">
+                <div class="col-lg-12 prl-50">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card-custom">
+                                <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card-custom">
+                                <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card-custom">
+                                <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card-custom">
+                                <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card-custom">
+                                <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card-custom">
+                                <img src="https://via.placeholder.com/250x300" alt="Card Image 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+
+                <div class="popup" id="popup">
+                    <span class="close" id="closePopup">&times;</span>
+                    <img id="popupImage" src="" alt="Popup Image">
+                </div>
+            </div>
+        </div>
+
+        <div class="container single-proj-img overlay-container-down">
+            <!-- <img src="https://via.placeholder.com/250x300" alt="Card Image 1"> -->
+        </div>
+
+        <div class="container d-flex justify-content-center bg-white">
+            <div class="container bg-white section-blog project-content">
+                <h5><b>Introduction</b></h5>
+                <div class="container">
+                    <p class="">The main objective of this project is to achieve a precise motion for the
+                        turtlebot3 in a given setup. The project encapsulates basic ROS2 services and actions to control
+                        a Turtlebot3 robot for autonomous patrolling and precise navigation to designated positions. The
+                        robot uses Laserscan to identify the nearest obstacle, which then
+                    </p>
+                </div>
+                <h5><b>GUI Node Implementation: </b></h5>
+                <div class="container mt-3">
+                    <p>decides and navigates to the safest calculated distance. The goal is to enable the robot to
+                        patrol a designated area while avoiding obstacles, demonstrated in both a simulated environment
+                        and with a real Turtlebot3 robot.
+                    </p>
+                </div>
+                <h5><b>Objectives</b></h5>
+                <ul>
+                    <li>Develop patrol behaviour using ROS2 and C++ in a simulated environment.</li>
+                    <li>Apply and test the developed program on a real Turtlebot3 robot in a citylab environment setup.
+                    </li>
+                </ul>
+                <h5><b>Tools and Techniques:</b></h5>
+                <ul class="mt-3 ">
+                    <li><b>Programming Languages:</b> C++</li>
+                    <li><b>Frameworks and Libraries:</b> ROS</li>
+                    <li><b>Simulation Environment: </b>Gazebo</li>
+                    <li><b>Robot Hardware: </b>Turtlebot3</li>
+                    <li><b>Version Control: </b>Git</li>
+                </ul>
+
+                <h5><b>Source Code</b></h5>
+                <div class="container">
+                    <a target="_blank" href="https://github.com/Gokhulraj6200/citylab_project.git">Github Repository</a>
+                </div>
+
+                <h5 class="mt-3"><b>Process and Development</b></h5>
+                <p class="mt-3 ">The development process is segmented into initial simulation setup,
+                    programming the patrol behaviour, and real-world testing.
+                </p>
+
+                <h5><b>Simulation Setup</b></h5>
+                <p class="mt-3 "><b>Initial Actions:</b> The simulation environment in Gazebo is
+                    configured to mimic real-world
+                    scenarios,
+                    allowing the robot’s patrol behaviour to be tested and refined. This involves launching the
+                    simulation through ROS2 commands and ensuring the virtual Turtlebot3 is ready for programming.</p>
+
+                <h5><b>Programming the Patrol Behavior</b></h5>
+                <p class="mt-3 "><b>Creating the ROS2 Package:</b> A package named robot_patrol was
+                    developed, containing a C++ file
+                    that defines the patrol behaviour. This includes subscribing to laser sensor topics to navigate and
+                    avoid obstacles based on the data received.</p>
+
+                <p class="mt-3 "><b>Algorithm Implementation:</b> A simple algorithm analyses 180 degrees
+                    in front of the robot,
+                    determining the safest direction by identifying the largest distance free of obstacles. This
+                    direction guides the robot’s movement, ensuring continuous patrolling without collisions.
+                    <br> Furthermore, Services and action goals were implemented to enhance the complexity for more
+                    precision movements when patrolling.
+                </p>
+
+                <h5><b>Services for Robot Navigation </b></h5>
+                <p class="mt-3 "><b>Creating the Service:</b> Before creating the service a custom
+                    service interface GetDirection.srv
+                    was
+                    created to take laser_data as request and direction as response. A ROS2 service server named
+                    direction_service.cpp was developed in the same package. This service receives laser data from the
+                    Turtlebot3 and analyses it to determine the safest direction for the robot to move, enhancing its
+                    obstacle avoidance capabilities.
+                </p>
+                <p><b>Integration with Patrol Behavior</b></p>
+
+                <p><b>Modifying the Patrol Script:</b> The existing patrol behaviour script, patrol_with_service.cpp,
+                    was
+                    modified to include calls to the newly developed ROS2 service. This integration allows for dynamic
+                    obstacle avoidance based on real-time sensor data. After successfully testing the navigation node in
+                    simulation, it was deployed to the real robot.</p>
+
+                <h5><b>Actions for Position Goals</b></h5>
+                <p><b>Action Server Creation</b></p>
+                <p><b>Developing the Action Server:</b> An action server named go_to_pose_action.cpp was created. This
+                    server
+                    accepts goal positions and navigates the Turtlebot3 to these locations using odometry and velocity
+                    commands, showcasing advanced robot control techniques.</p>
+
+                <h5><b>Real-world Testing</b></h5>
+                <p><b>Deployment on the Real Robot:</b> Before real-world deployment, the patrol behaviour was
+                    rigorously tested in the simulation to ensure reliable obstacle avoidance. After multiple successful
+                    simulation tests, the program was executed on an actual Turtlebot3 robot. This real-world test was
+                    conducted remotely, with the robot located in Barcelona, Spain, with the assistance of The Construct
+                    organization. Adjustments and debugging were carried out in real-time to adapt the patrol behavior
+                    to the nuances of the physical environment.
+                </p>
+
+                <h5><b>Results</b></h5>
+                <div class="container">
+                    <p class="mt-3 ">The project achieved its goal of developing an autonomous patrol
+                        behaviour that effectively navigates and avoids obstacles, both in a simulated environment and
+                        in real-world testing. The seamless transition from simulation to real-world application
+                        underscores the robustness of the developed program and the adaptability of ROS2 for robot
+                        programming.</p>
+                </div>
+
+                <h5><b>Key Insights</b></h5>
+                <ul>
+                    <li>The importance of simulation in robotics development was highlighted, serving as a critical step
+                        before real-world application.</li>
+                    <li>The adaptability of ROS2 in integrating with both simulated and real environments was evident,
+                        showcasing its potential for developing complex robotic behaviours with minor tweaks in the
+                        code.</li>
+                    <li>Future enhancements could include refining the obstacle avoidance algorithm for more complex
+                        environments and improving the robustness of the patrol behaviour.</li>
+                </ul>
+
+                <h5><b>Future Enhancements</b></h5>
+                <ul>
+                    <li><b>Algorithm Improvement:</b> Enhance the obstacle avoidance algorithm to handle more complex
+                        and dynamic environments.
+                    </li>
+                    <li><b>Sensor Integration: </b> Incorporate additional sensors for better perception and
+                        decision-making.</li>
+                    <li><b>Advanced Behaviours: </b> Develop more advanced patrol patterns and behaviours for specific
+                        applications.</li>
+                </ul>
+                <p>This project not only demonstrates the foundational capabilities of ROS2 but also paves the way for
+                    more sophisticated autonomous robotic applications in the future.
+                </p>
+            </div>
+        </div>
+
+
+        <footer class="mt-50">
+            <hr class="container">
+            <div class="container footer-content ptb-12 default-spacing">
+                <p>&copy; 2024 All rights reserved.</p>
+                <div class="d-flex justify-content-end ">
+                    <p><a class="footer-link" href="index.html">www.gokulraj.com</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>
