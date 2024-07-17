@@ -532,6 +532,8 @@ footer p a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    max-height: 350px;
+    max-width: 500px;
 }
 
 .card-custom.hidden {
@@ -539,8 +541,9 @@ footer p a {
 }
 
 .card-custom img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
     transform-origin: center center;
     /* Set the pivot point to the center */
