@@ -170,12 +170,15 @@ hr.container {
     font-weight: 600 !important;
 }
 
-.navbar-brand-home, .nav-icon-home{
+.navbar-brand-home,
+.nav-icon-home {
     font-size: 20px !important;
     font-weight: 600 !important;
     /* color: #ffffff !important; */
 }
-.navbar-brand-home:hover, .nav-icon-home:hover{
+
+.navbar-brand-home:hover,
+.nav-icon-home:hover {
     color: #394357 !important;
 }
 
@@ -307,7 +310,8 @@ footer p a {
     font-size: 12px !important;
     transition: all 0.3s;
 }
-.button-landing{
+
+.button-landing {
     background-color: #000000 !important;
     color: #ffffff;
     letter-spacing: .2rem;
@@ -358,34 +362,31 @@ footer p a {
     object-fit: cover;
 }
 
-.home-cards {
+/* .home-cards {
     display: flex;
     flex-wrap: wrap;
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
-}
+} */
 
 .home-card {
     min-height: 300px;
     padding: 50px 25px 50px 25px;
-    flex: 1 0 25%;
-    /* Four cards in a row for large screens */
+    /* flex: 1 0 25%; */
     border: 1px solid #d3d3d3;
     margin: 0;
     transition: transform 0.2s ease-in, background-color 0.3s ease-in-out;
 }
 
+.home-cards-section{
+    row-gap: 10px;
+}
+
 .home-card:hover {
     transform: scale(1.05);
-    /* Enlarges the card on hover */
     background-color: white;
-    /* Changes background color on hover */
     z-index: 1;
-    /* Makes sure the card is above others when hovered */
 }
 
 .home-card-content {
-    /* padding: 20px; */
     height: 100%;
     max-width: 250px;
     display: grid;
@@ -406,7 +407,7 @@ footer p a {
 .left-right {
     padding-left: 50px !important;
     padding-right: 50px !important;
-    position: relative;
+    /* position: relative; */
 }
 
 .left-scroll {
@@ -415,7 +416,6 @@ footer p a {
 }
 
 .right-scroll {
-    /* padding-top: 50px !important; */
     border-top: solid 1px #d3d3d3;
     display: flex;
     flex-direction: column;
@@ -423,17 +423,15 @@ footer p a {
 }
 
 .left-scroll {
-    position: relative;
-    top: 0;
+    /* position: relative;
+    top: 0; */
     transition: top 0.3s;
 }
 
 .fixed {
     position: fixed;
     top: 10vh;
-    /* Adjust this value as needed */
     width: inherit;
-    /* Ensures the fixed element doesn't shrink */
 }
 
 .right-scroll {
@@ -444,14 +442,19 @@ footer p a {
 .post {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
     justify-content: center;
     align-items: center;
 }
 
 @media (max-width: 992px) {
-    .home-card {
-        flex: 1 0 50%;
-        /* Two cards in a row for medium screens */
+    .home-cards-section{
+        /* display: flex; */
+        row-gap: 10px;
+        /* column-gap: 10px; */
+    }
+    .left-scroll{
+        padding: 20px !important;
     }
 }
 
@@ -519,6 +522,7 @@ footer p a {
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card-custom img {
@@ -583,6 +587,60 @@ footer p a {
     font-size: 0.875rem;
     color: #999;
     /* margin-top: 10px; */
+}
+
+/* Single Proj section */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.single-proj-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-proj-img img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    /* padding: 0px 20px 100px 20px !important; */
 }
 
 /* Contact section */
@@ -763,18 +821,4 @@ footer p a {
 
 .loader-title {
     letter-spacing: .1rem;
-}
-
-.single-proj-img {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.single-proj-img img {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    padding: 0px 20px 100px 20px !important;
 }
