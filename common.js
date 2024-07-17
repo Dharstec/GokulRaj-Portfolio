@@ -29,16 +29,33 @@ function simulateProgress() {
 
 document.addEventListener('DOMContentLoaded', simulateProgress);
 
+
+// Project page button filter
+
 function filterCards(category) {
   var cards = document.querySelectorAll('.card-custom');
-  cards.forEach(function (card) {
-      if (category === 'all' || card.getAttribute('data-category') === category) {
+  if (window.innerWidth > 768) {
+      cards.forEach(function (card) {
           card.classList.remove('hidden');
-      } else {
-          card.classList.add('hidden');
-      }
-  });
+      });
+  } else {
+      cards.forEach(function (card) {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.classList.remove('hidden');
+          } else {
+              card.classList.add('hidden');
+          }
+      });
+  }
 }
+
+// Run filterCards initially to show all cards on larger screens
+filterCards('all');
+
+// Listen for window resize events to update card visibility
+window.addEventListener('resize', function () {
+  filterCards('all'); // Reapply filter based on screen size
+});
 
 
 // POP UP image in single project
