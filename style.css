@@ -671,7 +671,7 @@ footer p a {
 
 .single-proj-img {
     height: 55vh;
-    background-image: url('https://via.placeholder.com/250x300');
+    background: url('https://via.placeholder.com/250x300');
     background-size: 90% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -686,6 +686,27 @@ footer p a {
 .section-blog{
     padding: 75px !important;
 }
+.overlay-container-down{
+    position: relative;
+    top: 50px;
+}
+
+.overlay-container-down-check{
+    /* height: 70vh; */
+    margin-top: -180px ;
+    z-index: 999;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.single-proj-vid iframe{
+    width: 90%;
+}
+/* .overlay-proj-static{
+    position: absolute;
+} */
 
 /* Contact section */
 
