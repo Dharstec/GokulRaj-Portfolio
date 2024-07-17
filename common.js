@@ -30,16 +30,18 @@ function simulateProgress() {
 document.addEventListener('DOMContentLoaded', simulateProgress);
 
 function filterCards(category) {
-  var cards = document.querySelectorAll('.card-item');
+  var cards = document.querySelectorAll('.card-custom');
   cards.forEach(function (card) {
-    if (category === 'all' || card.getAttribute('data-category') === category) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+      } else {
+          card.classList.add('hidden');
+      }
   });
 }
 
+
+// POP UP image in single project
 const cards = document.querySelectorAll('.card-custom');
 const popup = document.getElementById('popup');
 const popupImage = document.getElementById('popupImage');

@@ -142,6 +142,11 @@ hr.container {
     background-color: #eef0f6;
 }
 
+.bg-grey-landing{
+    /* background: linear-gradient(to right, #eef0f6, #dbd4d4); */
+    background-color: #999;
+}
+
 .bg-white {
     background-color: #ffffff;
 }
@@ -329,6 +334,7 @@ footer p a {
 }
 
 /* Home page */
+
 .hero-header {
     height: 100vh;
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(assets/landing-page-img.jpg);
@@ -342,6 +348,9 @@ footer p a {
     animation: imgRotate 50s linear infinite;
 }
 
+.hero-content.row{
+    height: 100%;
+}
 .title-left {
     font-size: 42px;
     font-weight: 600;
@@ -465,8 +474,8 @@ footer p a {
     }
 
     .left-right {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
         padding-bottom: 0px !important;
         text-align: justify;
     }
@@ -523,6 +532,10 @@ footer p a {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}
+
+.card-custom.hidden {
+    display: none; /* Hidden cards will not be displayed */
 }
 
 .card-custom img {
@@ -588,7 +601,20 @@ footer p a {
     color: #999;
     /* margin-top: 10px; */
 }
-
+@media screen and (max-width:426px) {
+    .button-area{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px){
+    .button-area{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
 /* Single Proj section */
 .popup {
     display: none;
@@ -630,17 +656,25 @@ footer p a {
     z-index: 999;
 }
 
-.single-proj-img {
+/* .single-proj-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+    display: flex;
+} */
 
-.single-proj-img img {
+/* .single-proj-img img {
     height: 350px;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
-    /* padding: 0px 20px 100px 20px !important; */
+} */
+
+.single-proj-img {
+    height: 55vh;
+    background-image: url('https://via.placeholder.com/250x300');
+    background-size: 90% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Contact section */
