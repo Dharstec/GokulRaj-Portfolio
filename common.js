@@ -59,7 +59,7 @@ window.addEventListener('resize', function () {
 
 
 // POP UP image in single project
-const cards = document.querySelectorAll('.card-custom');
+const cards = document.querySelectorAll('.card-custom-single');
 const popup = document.getElementById('popup');
 const popupImage = document.getElementById('popupImage');
 const overlay = document.getElementById('overlay');
