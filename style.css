@@ -348,8 +348,8 @@ footer p a {
 
 .hero-header {
     height: 100vh;
-    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(assets/landing-page-img.jpg);
-    /* background: linear-gradient(rgba(33, 58, 120, 0.9), rgba(15, 23, 43, .9)), url(assets/landing-page-img.jpg); */
+    /* background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(assets/landing-page-img.jpg); */
+    background: linear-gradient(rgba(26, 29, 39, 0.9), rgba(15, 23, 43, .9)), url(assets/landing\ gif\ compressed.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
