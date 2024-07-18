@@ -1,10 +1,10 @@
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 50) {
-    $('.navbar').addClass('scrolled');
-  } else {
-    $('.navbar').removeClass('scrolled');
-  }
-});
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() > 50) {
+//     $('.navbar').addClass('scrolled');
+//   } else {
+//     $('.navbar').removeClass('scrolled');
+//   }
+// });
 
 // function showSingleProjDets(id) {
 //   const url = new URL('singleProjectDets.html', window.location.origin);

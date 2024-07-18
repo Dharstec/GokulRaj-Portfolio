@@ -157,6 +157,7 @@ hr.container {
     padding-right: 20px;
     transition: background-color 0.5s ease;
     border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
 }
 
 .navbar.scrolled {
@@ -174,17 +175,16 @@ hr.container {
     font-weight: 600 !important;
 }
 
-.navbar-brand-home,
+/* .navbar-brand-home,
 .nav-icon-home {
     font-size: 20px !important;
     font-weight: 600 !important;
-    /* color: #ffffff !important; */
 }
 
 .navbar-brand-home:hover,
 .nav-icon-home:hover {
     color: #394357 !important;
-}
+} */
 
 .navbar-brand:hover,
 .nav-icon:hover {
