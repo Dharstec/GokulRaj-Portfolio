@@ -33,6 +33,14 @@ a:hover {
     color: #4d576b;
 }
 
+.git-link{
+    color: #626d86 !important;
+}
+.git-link:hover{
+    color: #333333 !important;
+    text-decoration: none;
+}
+
 td {
     color: #626d86 !important;
 }
@@ -269,21 +277,18 @@ swiper-slide img {
 }
 .landing-section-proj-vid{
     height: 60vh;
-    /* background: url('https://via.placeholder.com/250x300'); */
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-    padding: 0 !important;
 }
 .landing-section-proj-vid iframe{
-    width: 100%;
+    width: 91% !important;
+}
+.singleProj-section-vid{
+    height: 50vh;
+    /* height: max-content; */
+}
+.singleProj-section-vid iframe{
+    width: 80%;
 }
 
-/* .proj-title{
-    position: absolute;
-    left: auto;
-    top: auto;
-} */
 
 .slide-content {
     position: absolute;
@@ -643,6 +648,7 @@ footer p a {
     z-index: 1000;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease;
 }
 
 .popup img {

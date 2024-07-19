@@ -59,27 +59,79 @@ window.addEventListener('resize', function () {
 
 
 // POP UP image in single project
-const cards = document.querySelectorAll('.card-custom-single');
-const popup = document.getElementById('popup');
-const popupImage = document.getElementById('popupImage');
-const overlay = document.getElementById('overlay');
-const closePopup = document.getElementById('closePopup');
+// const cards = document.querySelectorAll('.card-custom-single');
+// const popup = document.getElementById('popup');
+// const popupImage = document.getElementById('popupImage');
+// const overlay = document.getElementById('overlay');
+// const closePopup = document.getElementById('closePopup');
 
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        const imgSrc = card.querySelector('img').src;
-        popupImage.src = imgSrc;
-        popup.style.display = 'flex';
-        overlay.style.display = 'block';
-    });
-});
+// cards.forEach(card => {
+//     card.addEventListener('click', () => {
+//         const imgSrc = card.querySelector('img').src;
+//         popupImage.src = imgSrc;
+//         popup.style.display = 'flex';
+//         overlay.style.display = 'block';
+//     });
+// });
 
-closePopup.addEventListener('click', () => {
-    popup.style.display = 'none';
-    overlay.style.display = 'none';
-});
+// closePopup.addEventListener('click', () => {
+//     popup.style.display = 'none';
+//     overlay.style.display = 'none';
+// });
 
-overlay.addEventListener('click', () => {
-    popup.style.display = 'none';
-    overlay.style.display = 'none';
+// overlay.addEventListener('click', () => {
+//     popup.style.display = 'none';
+//     overlay.style.display = 'none';
+// });
+
+$(document).ready(function() {
+  const cards = document.querySelectorAll('.card-custom-single img');
+  const popup = document.getElementById('popup');
+  const overlay = document.getElementById('overlay');
+  const closePopup = document.getElementById('closePopup');
+  const carousel = $('.owl-carousel');
+
+  carousel.owlCarousel({
+      items: 1,
+      loop: true,
+      nav: true,
+      navText: ['<button class="prev">Previous</button>', '<button class="next">Next</button>'],
+      dots: false
+  });
+
+  let currentIndex = 0;
+
+  function showPopup(index) {
+      carousel.trigger('to.owl.carousel', index);
+      popup.style.display = 'flex';
+      overlay.style.display = 'block';
+      currentIndex = index;
+
+      // Apply transform effect
+      requestAnimationFrame(() => {
+          popup.style.transform = 'translate(-50%, -50%) scale(1)';
+      });
+  }
+
+  cards.forEach((card, index) => {
+      card.addEventListener('click', () => {
+          showPopup(index);
+      });
+  });
+
+  closePopup.addEventListener('click', () => {
+      closePopupFunction();
+  });
+
+  overlay.addEventListener('click', () => {
+      closePopupFunction();
+  });
+
+  function closePopupFunction() {
+      popup.style.transform = 'translate(-50%, -50%) scale(0.8)';
+      setTimeout(() => {
+          popup.style.display = 'none';
+          overlay.style.display = 'none';
+      }, 300); // Match this with the transition duration in CSS
+  }
 });
