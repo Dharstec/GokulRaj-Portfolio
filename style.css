@@ -275,12 +275,16 @@ swiper-slide img {
 .landing-section-proj {
     height: 60vh;
 }
+
 .landing-section-proj-vid{
     height: 60vh;
 }
 .landing-section-proj-vid iframe{
     width: 91% !important;
+    /* height: 350px;
+    width: 560px; */
 }
+
 .singleProj-section-vid{
     height: 50vh;
     /* height: max-content; */
@@ -351,9 +355,8 @@ footer p a {
 
 /* Home page */
 
-.hero-header {
+/* .hero-header {
     height: 100vh;
-    /* background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(assets/landing-page-img.jpg); */
     background: url(assets/Landing\ gif.gif);
     background-color: #000000 !important;
     background-position: center center;
@@ -370,7 +373,51 @@ footer p a {
 
 .hero-content.row{
     height: 100%;
+} */
+
+/* Check landing video */
+
+.hero-header {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
 }
+
+#backgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw !important;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:998px) {
+    #backgroundVideo {
+        min-width: 100% !important;
+        min-height: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+.hero-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-header .hero-content h1,
+.hero-header .hero-content p,
+.hero-header .hero-content button {
+    position: relative;
+    z-index: 2;
+}
+
+
 .title-left {
     font-size: 42px;
     font-weight: 600;
@@ -677,6 +724,18 @@ footer p a {
     z-index: 999;
 }
 
+.owl-carousel{
+    width: 50vw;
+    height: 65vh;
+}
+.owl-carousel img{
+    width: 50vw;
+    height: 65vh;
+    object-fit: cover;
+}
+
+
+
 /* .single-proj-img {
     width: 100%;
     height: 100%;
@@ -726,7 +785,7 @@ footer p a {
     width: 90%;
 }
 
-.card-custom-single-container{
+/* .card-custom-single-container{
     max-height: 350px;
     max-width: 200px;
 }
@@ -743,8 +802,112 @@ footer p a {
 }
 .card-custom-single:hover img {
     transform: scale(1.05);
-    /* Scale up the image by 5% */
+} */
+
+.content-img-section {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
+
+.content-img-section img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: all .3s ease;
+}
+
+.content-img-section img:hover {
+    transform: scale(1.05); /* Optional: Scale up the image by 5% on hover */
+}
+
+
+
+.card-custom-single-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    flex: 1;
+    margin-bottom: 16px; /* Ensure consistent spacing */
+}
+
+.card-custom-single {
+    width: 100% !important;
+    background-color: #fff; /* White background */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-custom-single::before {
+    content: "";
+    display: block;
+    padding-top: 75%; /* This maintains the 4:3 aspect ratio (3/4 * 100) */
+}
+
+.card-custom-single img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease !important;
+}
+
+.card-custom-single:hover img {
+    transform: scale(1.05); /* Scale up the image by 5% */
+}
+
+.single-proj-img-section{
+    display: flex;
+    justify-content: center;
+}
+/* Media Queries for Responsive Design */
+@media (min-width: 1200px) {
+    .card-custom-single-container {
+        max-width: 33.3333%; /* 3 cards per row */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card-custom-single-container {
+        max-width: 50%; /* 2 cards per row */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-custom-single-container {
+        max-width: 50%; /* 2 cards per row */
+    }
+    .single-proj-img-section{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-custom-single-container {
+        max-width: 100%; /* 1 card per row */
+    }
+    .single-proj-img-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 
 
 /* Contact section */
