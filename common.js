@@ -135,3 +135,31 @@ $(document).ready(function() {
       }, 300); // Match this with the transition duration in CSS
   }
 });
+
+
+// home page scroll content
+window.addEventListener('scroll', function() {
+    const leftScroll = document.getElementById('left-scroll');
+    const rightScroll = document.getElementById('right-scroll');
+    const offsetTop = leftScroll.getBoundingClientRect().top;
+
+    if (window.innerWidth >= 768) {
+        if (offsetTop <= 0) {
+            leftScroll.classList.add('left-fixed');
+            rightScroll.classList.add('right-scroll');
+        } else {
+            leftScroll.classList.remove('left-fixed');
+            rightScroll.classList.remove('right-scroll');
+        }
+    }
+});
+
+window.addEventListener('resize', function() {
+    const leftScroll = document.getElementById('left-scroll');
+    const rightScroll = document.getElementById('right-scroll');
+
+    if (window.innerWidth < 768) {
+        leftScroll.classList.remove('left-fixed');
+        rightScroll.classList.remove('right-scroll');
+    }
+});
