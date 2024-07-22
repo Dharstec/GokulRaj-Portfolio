@@ -285,6 +285,22 @@ swiper-slide img {
     position: relative;
 }
 
+@media screen and (max-width:768px) {
+    .landing-section {
+        height: 60vh;
+        width: 100vw;
+        padding-left: 0px !important;
+        background-color: #eeeeee !important;
+    }
+    
+    .landing-section img {
+        opacity: 0.9;
+        width: 100vw;
+        height: 60vh;
+        object-fit: contain;
+        position: relative;
+    }
+}
 .landing-section-proj {
     height: 60vh;
 }
@@ -1199,6 +1215,35 @@ footer p a {
     width: 100%;
 }
 
+@media screen and (max-width:427px) {
+    .contact-box{
+        padding: 50px 20px !important;
+    }
+    .contact-box td{
+        font-size: 14px !important;
+    }
+    .contact-text{
+        padding-bottom: 20px;
+    }
+    .contact-form input {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:427px) and (max-width:769px) {
+    .contact-box{
+        padding: 50px 20px !important
+    }
+    .contact-box p{
+        font-size: 16px;
+    }
+    .contact-box td{
+        font-size: 16px !important;
+    }
+    .contact-text{
+        padding-bottom: 20px;
+    }
+}
 
 /* Loader styling */
 .loader {
