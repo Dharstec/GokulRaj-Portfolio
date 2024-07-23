@@ -81,7 +81,8 @@
 
         <div
             class="container-fluid landing-section-proj bg-grey-landing d-flex justify-content-center align-items-center">
-            <div class="landing-content d-flex flex-column justify-content-center align-items-center">
+            <img src="assets/projects-header.jpg" alt="">
+            <div class="container-fluid landing-content d-flex flex-column justify-content-center align-items-center bg-opa-black">
                 <h1 class="landing-title text-center">Autonomous Obstacle Avoidance with Turtlebot3 in Citylabs</h1>
                 <p>This project implements the Obstacle Avoidance algorithm for precise robot control.
                 </p>
@@ -91,6 +92,9 @@
                 </p>
             </div>
         </div>
+        <!-- <div class="container-fluid landing-section">
+            <img src="assets/projects-header.jpg" alt="">
+        </div> -->
 
 
         <div class="overlay-container d-flex flex-column justify-content-center">
@@ -98,7 +102,13 @@
                 <!-- Intro Section -->
                 <div class="col-lg-12 prl-50 intro-sec">
                     <div class="container">
-                        <h5><b>Introduction</b></h5>
+                        <div class="pb-2 d-flex justify-content-between">
+                            <h5><b>Introduction</b></h5>
+                            <div class="d-flex">
+                                <a href="#blog-section">Skip To Content</a>
+                                <i class="fas fa-chevron-down p-1 "></i>
+                            </div>
+                        </div>
                         <div class="container">
                             <p>The main objective of this project is to achieve a precise motion for the
                                 turtlebot3 in a given setup. The project encapsulates basic ROS2 services and actions to
@@ -117,25 +127,25 @@
                     <!-- Image Section -->
                     <div class="row single-proj-img-section">
                         <div
-                            class="col-lg-6 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
                             <div class="card-custom-single">
                                 <img data-src="https://assetsfiles.s3.amazonaws.com/Project+3/5a.png" class="lazyload" alt="Card Image 1">
                             </div>
                         </div>
                         <div
-                            class="col-lg-6 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
                             <div class="card-custom-single">
                                 <img data-src="https://assetsfiles.s3.amazonaws.com/Project+3/5b.png" class="lazyload" alt="Card Image 1">
                             </div>
                         </div>
                         <div
-                            class="col-lg-6 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
                             <div class="card-custom-single">
                                 <img data-src="https://assetsfiles.s3.amazonaws.com/Project+3/5c.png" class="lazyload" alt="Card Image 1">
                             </div>
                         </div>
                         <div
-                            class="col-lg-6 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
                             <div class="card-custom-single">
                                 <img data-src="https://assetsfiles.s3.amazonaws.com/Project+3/6e.png" class="lazyload" alt="Card Image 1">
                             </div>
@@ -158,9 +168,10 @@
                 </div>
 
                 <!-- Video Section -->
+                 <!--  width="560" height="400" -->
                 <div
-                    class="container landing-section-proj-vid d-flex justify-content-center align-items-center ptb-50 mt-50">
-                    <iframe width="560" height="400" class="lazyload"
+                    class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
+                    <iframe class="lazyload"
                     data-src="https://assetsfiles.s3.amazonaws.com/Project+3/5d.mp4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -168,8 +179,8 @@
                 </div>
 
                 <div
-                    class="container landing-section-proj-vid d-flex justify-content-center align-items-center ptb-50 mt-50">
-                    <iframe width="560" height="400" class="lazyload"
+                    class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20 ">
+                    <iframe class="lazyload"
                     data-src="https://assetsfiles.s3.amazonaws.com/Project+3/6f.mp4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -177,15 +188,15 @@
                 </div>
 
                 <div
-                    class="container landing-section-proj-vid d-flex justify-content-center align-items-center ptb-50 mt-50">
-                    <iframe width="560" height="400" class="lazyload"
+                    class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20 ">
+                    <iframe class="lazyload"
                     data-src="https://assetsfiles.s3.amazonaws.com/Project+3/Turtlebot3.mp4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
-                <div class="container bg-white section-blog project-content">
+                <div class="container bg-white section-blog project-content" id="blog-section">
                     <h5><b>Objectives</b></h5>
                     <ul>
                         <li>Develop patrol behaviour using ROS2 and C++ in a simulated environment.</li>
