@@ -157,6 +157,7 @@ hr.container {
 
 .bg-grey-landing {
     background-color: #999;
+    /* background-color: #000000; */
 }
 
 .bg-white {
@@ -221,6 +222,9 @@ a {
     text-decoration: none !important;
     /* color: inherit !important; */
 }
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
 
 @media screen and (max-width:768px) {
     .navbar.fixed-top {
@@ -240,6 +244,11 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    ul.navbar-nav.nav-icons {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -345,7 +354,12 @@ swiper-slide img {
 
 @media screen and (max-width:768px) {
     .landing-section-proj {
-        height: 80vh;
+        padding: 0px !important;
+        height: 80vh !important;
+    }
+    .landing-section-proj img{
+        padding: 0px !important;
+        height: 80vh !important;
     }
 
     .landing-title {
@@ -1171,7 +1185,9 @@ footer p a {
         min-height: 200px;
         max-height: 300px;
     }
-
+    .skip-content{
+        font-size: 14px !important;
+    }
 
 }
 

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokhul Raj</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Include Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Mosterrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <h3 class="loader-title"><b>LOADING</b></h3>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div id="content">
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top container">
+                <a class="navbar-brand" href="index.html">GOKHUL RAJ RAVIKUMAR</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="projects.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-cont" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" target="_blank"
+                                href="https://www.linkedin.com/in/gokhul-raj-ravikumar-483383196/"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" target="_blank" href="https://github.com/Gokhulraj6200"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div
+            class="container-fluid landing-section-proj bg-grey-landing d-flex justify-content-center align-items-center">
+            <div class="landing-content d-flex flex-column justify-content-center align-items-center">
+                <h1 class="landing-title text-center">Robot chase game: Simulating Multi-Robot Pursuit Using ROS2 with
+                    TF Integration</h1>
+                <p>Simulating playful interactions between autonomous robots in a controlled environment.</p>
+                <div class="d-flex flex-column">
+                    <p><a target="_blank" class="git-link" href="https://github.com/Gokhulraj6200/robot-chase">GIT
+                            LINK 1</a></p>
+                </div>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="overlay-container d-flex flex-column justify-content-center">
+            <div class="container  d-flex flex-column justify-content-center bg-white ptb-75 prl-50">
+                <!-- Intro Section -->
+                <div class="col-lg-12 prl-50 intro-sec">
+                    <div class="container">
+                        <div class="pb-2 d-flex justify-content-between">
+                            <h5><b>Introduction</b></h5>
+                            <div class="d-flex skip-content ps-3">
+                                <a href="#blog-section">Skip To Content</a>
+                                <i class="fas fa-chevron-down p-1 "></i>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <p>This project aims to simulate a playful chase game between two autonomous robots named
+                                Rick and Morty. Using ROS2, Gazebo, and Rviz, the project demonstrates how robots can
+                                interact, track, and follow each other using TF frames and URDF/XACRO modeling.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Image Section -->
+                    <div class="row single-proj-img-section">
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            <div class="card-custom-single">
+                                <img data-src="https://assetsfiles.s3.amazonaws.com/project+5/8a.jpg" class="lazyload"
+                                    alt="Card Image 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+                <div id="popup" class="popup">
+                    <span id="closePopup" class="close">&times;</span>
+                    <div id="carousel" class="owl-carousel">
+                        <div class="item"><img class="lazyload"
+                                data-src="https://assetsfiles.s3.amazonaws.com/project+5/8a.jpg" alt="Popup Image 1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
+                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+5/rec_8.mp4" class="lazyload"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
+                    <iframe
+                        data-src="https://assetsfiles.s3.amazonaws.com/project+5/ROS+project+simulation+-+Checkpoint+8_TF+for+ROS2+_Robotics+%26+ROS+Online+Courses_+The+Construct.mp4"
+                        class="lazyload" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+
+
+
+                <div class="container bg-white section-blog project-content" id="blog-section">
+                    <h5><b>Objectives</b></h5>
+                    <p class="container mt-3">To develop a simulation in which one robot (Rick) can autonomously chase
+                        another robot (Morty) within a Gazebo environment. The project involves:</p>
+                    <ul>
+                        <li>Modeling robots using URDF and refactoring with XACRO.</li>
+                        <li>Simulating the robots in Gazebo and Rviz.</li>
+                        <li>Implementing a ROS2 node in C++ for robot tracking and pursuit behavior.</li>
+                    </ul>
+                    <h5><b>Tools and Techniques:</b></h5>
+                    <ul class="mt-3 ">
+                        <li><b>Programming Languages:</b> C++</li>
+                        <li><b>Simulation Environment: </b>Gazebo</li>
+                        <li><b>Visualization Tool:</b> Rviz</li>
+                        <li><b>Robot Modeling:</b> URDF (Unified Robot Description Format), XACRO</li>
+                        <li><b>Middleware:</b> ROS2 (Robot Operating System 2)</li>
+                        <li><b>Version Control: </b>Git</li>
+                    </ul>
+
+                    <h5><b>Source Code</b></h5>
+                    <div class="container">
+                        <a target="_blank" href="https://github.com/Gokhulraj6200/robot-chase">Github
+                            Repository</a>
+                    </div>
+
+                    <h5 class="mt-3"><b>Process and Development</b></h5>
+
+                    <h5><b>Initial Setup:</b></h5>
+                    <p class="mt-3 container">The initial setup involves cloning necessary repositories and setting up
+                        the ROS2 workspace. After downloading the required files, the workspace is compiled, and the
+                        Barista robot simulation is launched to ensure everything is correctly set up.
+                    </p>
+
+                    <h5><b>Simulation of Multiple Robots:</b></h5>
+                    <p class="mt-3 container"><b>Launching Multiple Robots:</b> A new launch file,
+                        barista_two_robots.launch.py, is introduced to initialize Gazebo and Rviz with both robot models
+                        simultaneously, ensuring unique namespaces to avoid any conflicts in node names, topics, and TF
+                        frames.
+                    </p>
+
+                    <p class="mt-3 container"><b>Validation:</b> The setup is validated by confirming that both robots
+                        are displayed correctly and can be controlled independently using remapped command velocity
+                        topics.
+                    </p>
+
+                    <h5><b>Robot Chase:</b></h5>
+                    <p class="mt-3 container"><b>Creating ROS2 Package:</b> A new ROS2 package called robot_chase is
+                        initialized, with a source file named robot_chase.cpp added to implement the pursuit algorithm.
+                    </p>
+
+                    <p class="mt-3 container"><b>Implementing Pursuit Algorithm:</b> A ROS2 node written in C++ listens
+                        to the TF frames of Morty and computes the distance and angular errors between Rick and Morty.
+                        Based on these errors, velocity commands are sent to Rick, enabling it to follow Morty.</p>
+
+                    <p class="mt-3 container"><b>Testing and Validation:</b> The behavior of the pursuit algorithm is
+                        tested by moving Morty and verifying that Rick correctly chases Morty, adjusting its movements
+                        to follow and try to catch Morty.</p>
+
+                    <h5><b>Results</b></h5>
+                    <div class="container">
+                        <p class="mt-3 ">The project successfully simulates a chase game between two robots, showcasing
+                            the capabilities of ROS2 in handling complex robot interactions and real-time simulation.
+                            The implementation highlights the importance of precise robot modeling, efficient namespace
+                            management, and robust algorithm design in robotics simulations. The accurate implementation
+                            of TF (transform) frames was crucial for the project's success, as it enabled precise
+                            tracking and coordination between the robots, ensuring that Rick could effectively follow
+                            Morty's movements.</p>
+                    </div>
+
+                    <h5><b>Key Insights</b></h5>
+                    <div class="container">
+                        <ul>
+                            <li><b>Robot Interaction:</b> The project highlights the capability of ROS2 to manage
+                                complex interactions between multiple robots.</li>
+                            <li><b>Simulation Accuracy:</b> Accurate simulation of real-world robot behavior is
+                                achievable with proper modeling and algorithm implementation.</li>
+                            <li><b>Algorithm Performance:</b> The pursuit algorithm's effectiveness is critical for
+                                real-time robot tracking and following.</li>
+                            <li><b>Namespace Management:</b> Proper namespace management is essential to avoid conflicts
+                                and ensure independent control of multiple robots within the same environment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-50">
+            <hr class="container">
+            <div class="container footer-content ptb-12 default-spacing">
+                <p>&copy; 2024 All rights reserved.</p>
+                <div class="d-flex justify-content-end ">
+                    <p><a class="footer-link" href="index.html">www.gokulraj.com</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+    <!-- Lazy Load -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+
+</body>
+
+</html>
