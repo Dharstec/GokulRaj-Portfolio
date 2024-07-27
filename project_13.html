@@ -98,7 +98,7 @@
             <div class="container  d-flex flex-column justify-content-center bg-white ptb-75 prl-50">
                 <!-- Intro Section -->
                 <div class="col-lg-12 prl-50 intro-sec">
-                    <div class="container">
+                    <!-- <div class="container">
                         <div class="pb-2 d-flex justify-content-between">
                             <h5><b>Introduction</b></h5>
                             <div class="d-flex skip-content ps-3">
@@ -112,9 +112,9 @@
                                 the robot will efficiently move materials between production lines, ensuring smooth and
                                 efficient manufacturing processes.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Image Section -->
-                    <div class="row single-proj-img-section">
+                    <!-- <div class="row single-proj-img-section">
                         <div
                             class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
                             <div class="card-custom-single">
@@ -136,9 +136,9 @@
                                     alt="Card Image 1">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="overlay" id="overlay"></div>
+                <!-- <div class="overlay" id="overlay"></div>
                 <div id="popup" class="popup">
                     <span id="closePopup" class="close">&times;</span>
                     <div id="carousel" class="owl-carousel">
@@ -152,34 +152,38 @@
                                 data-src="https://assetsfiles.s3.amazonaws.com/project+13/18d.png" alt="Popup Image 1">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Video Section -->
                 <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+13/18b.mp4" class="lazyload"
+                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+13/rec_18e.mp4" class="lazyload"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+13/18e.mp4" class="lazyload"
+                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+13/rec_18f.mp4" class="lazyload"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-
-                <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+13/18f.mp4" class="lazyload"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-
 
 
                 <div class="container bg-white section-blog project-content" id="blog-section">
+                    <div>
+                        <h5><b>Introduction</b></h5>
+                        <!-- <div class="d-flex skip-content ps-3">
+                            <a href="#blog-section">Skip To Content</a>
+                            <i class="fas fa-chevron-down p-1 "></i>
+                        </div> -->
+                    </div>
+                    <div class="container">
+                        <p>This project aims to enhance the autonomous navigation capabilities of a state-of-the-art
+                            industrial robot within a factory setting. By implementing Dijkstra's Algorithm in C++,
+                            the robot will efficiently move materials between production lines, ensuring smooth and
+                            efficient manufacturing processes.</p>
+                    </div>
                     <h5><b>Objectives</b></h5>
                     <p class="container">
                         The main objective is to replace the default path planner in Nav2 with a custom implementation
@@ -205,18 +209,37 @@
                     <div class="container">
                         <ol>
                             <li><b>Setup:</b> Initialize the robot and simulation environment using Gazebo and ROS </li>
-                            <li><b>Default Configuration:</b> Verify the default navigation setup using Nav2 and Rviz2.</li>
+                            <li><b>Default Configuration:</b> Verify the default navigation setup using Nav2 and Rviz2.<span class="view-more" data-target="#modal1">(ViewMore...)</span>
+                            </li>
+                            <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" data-target="#modal1">&times;</span>
+                                    <!-- <img src="https://assetsfiles.s3.amazonaws.com/Project+6/9b_gif.gif" alt="Image"> -->
+                                    <iframe src="https://assetsfiles.s3.amazonaws.com/project+13/rec_18e.mp4" frameborder="0"
+                                    height="100%"></iframe>
+                                </div>
+                            </div>
                             <li><b>Branch Creation:</b> Create a new Git branch named project-work to ensure the master
                                 branch remains unchanged.</li>
-                            <li><b>Planner Modification:</b> Update the planner_server.yaml configuration file to use the
+                            <li><b>Planner Modification:</b> Update the planner_server.yaml configuration file to use
+                                the
                                 nav2_dijkstra_planner/DijkstraGlobalPlanner.</li>
                             <li><b>Build and Test:</b> Compile the updated configuration and verify the new planner
                                 integration using Gazebo and Nav2.</li>
                             <li><b>Algorithm Implementation:</b> Implement Dijkstra's Algorithm in the provided C++ file
                                 (nav2_dijkstra_planner.cpp), ensuring the correct handling of open and closed lists,
-                                neighbor processing, and path construction.</li>
-                            <li><b>Commit and Document:</b> Regularly commit changes to the project-work branch, documenting
-                                significant steps and ensuring the code is thoroughly commented.</li>
+                                neighbor processing, and path construction.<span class="view-more" data-target="#modal2">(ViewMore...)</span></li>
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" data-target="#modal2">&times;</span>
+                                        <!-- <img src="https://assetsfiles.s3.amazonaws.com/Project+6/9b_gif.gif" alt="Image"> -->
+                                        <iframe src="https://assetsfiles.s3.amazonaws.com/project+13/rec_18f.mp4" frameborder="0"
+                                        height="100%"></iframe>
+                                    </div>
+                                </div>
+                            <!-- <li><b>Commit and Document:</b> Regularly commit changes to the project-work branch,
+                                documenting
+                                significant steps and ensuring the code is thoroughly commented.</li> -->
                         </ol>
                     </div>
                     <h5><b>Results</b></h5>
@@ -232,12 +255,15 @@
                     <h5><b>Key Insights</b></h5>
                     <div class="container">
                         <ul>
-                            <li><b>Algorithm Efficiency:</b> The implementation of Dijkstra's Algorithm is more computationally
+                            <li><b>Algorithm Efficiency:</b> The implementation of Dijkstra's Algorithm is more
+                                computationally
                                 intensive than the default planner, leading to longer path computation times.</li>
-                            <li><b>Path Accuracy:</b> The generated paths tend to be more grid-like, reflecting the nature of
+                            <li><b>Path Accuracy:</b> The generated paths tend to be more grid-like, reflecting the
+                                nature of
                                 Dijkstra's Algorithm in a discretized environment.
                             </li>
-                            <li><b>Autonomous Navigation:</b> Despite initial challenges, the project showcases the feasibility
+                            <li><b>Autonomous Navigation:</b> Despite initial challenges, the project showcases the
+                                feasibility
                                 and benefits of custom path planning algorithms in industrial automation.</li>
                         </ul>
                     </div>

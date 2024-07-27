@@ -140,17 +140,24 @@
                         <div
                             class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
                             <div class="card-custom-single">
-                                <img data-src="https://assetsfiles.s3.amazonaws.com/project+11/16d.png" class="lazyload"
+                                <img data-src="https://assetsfiles.s3.amazonaws.com/project+11/16f.png" class="lazyload"
                                     alt="Card Image 1">
                             </div>
                         </div>
                         <div
                             class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
                             <div class="card-custom-single">
-                                <img data-src="https://assetsfiles.s3.amazonaws.com/project+11/16f.png" class="lazyload"
+                                <img data-src="https://assetsfiles.s3.amazonaws.com/project+11/16e_gif.gif" class="lazyload"
                                     alt="Card Image 1">
                             </div>
                         </div>
+                        <div
+                        class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                        <div class="card-custom-single">
+                            <img data-src="https://assetsfiles.s3.amazonaws.com/project+11/16g_gif.gif" class="lazyload"
+                                alt="Card Image 1">
+                        </div>
+                    </div>
 
                     </div>
                 </div>
@@ -169,33 +176,42 @@
                             data-src="https://assetsfiles.s3.amazonaws.com/project+11/16c.png" alt="Popup Image 1">
                     </div>
                     <div class="item"><img class="lazyload"
-                            data-src="https://assetsfiles.s3.amazonaws.com/project+11/16d.png" alt="Popup Image 1">
-                    </div>
-                    <div class="item"><img class="lazyload"
                             data-src="https://assetsfiles.s3.amazonaws.com/project+11/16f.png" alt="Popup Image 1">
                     </div>
+                    <div class="item"><img class="lazyload"
+                            data-src="https://assetsfiles.s3.amazonaws.com/project+11/16e_gif.gif" alt="Popup Image 1">
+                    </div>
+                    <div class="item"><img class="lazyload"
+                        data-src="https://assetsfiles.s3.amazonaws.com/project+11/16g_gif.gif" alt="Popup Image 1">
+                </div>
                 </div>
             </div>
 
             <!-- Video Section -->
-            <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
+            <!-- <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
                 <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+11/16e.mp4" class="lazyload"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+11/16g.mp4" class="lazyload"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-
-
+            </div> -->
 
             <div class="container bg-white section-blog project-content" id="blog-section">
+
+                    <div >
+                        <h5><b>Introduction</b></h5>
+                        <!-- <div class="d-flex skip-content ps-3">
+                            <a href="#blog-section">Skip To Content</a>
+                            <i class="fas fa-chevron-down p-1 "></i>
+                        </div> -->
+                    </div>
+                    <div class="container">
+                        <p>The goal of this project was to design and implement the kinematic model for the ROSBot
+                            XL robot in a simulated environment using Gazebo Sim (Ignition). The project involved
+                            testing the robot’s movement capabilities, developing a ROS2 package to publish wheel
+                            speeds, and transforming these into commands to effectively control the robot’s motion,
+                            including executing a complex figure-eight trajectory.
+                        </p>
+                    </div>
                 <h5><b>Objectives</b></h5>
                 <ul>
                     <li>To classify the ROSBot XL as holonomic or non-holonomic based on its movement capabilities.
@@ -244,7 +260,14 @@
                         </ul>
                         <li><b>Kinematic Model Implementation:</b> Created a node that subscribes to the
                             /wheel_speed topic and transforms the wheel speed outputs into Twist messages to control
-                            the robot’s movements in the simulation accurately.</li>
+                            the robot’s movements in the simulation accurately.<span class="view-more"
+                            data-target="#modal1">(ViewMore...)</span></li>
+                            <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" data-target="#modal1">&times;</span>
+                                    <img src="https://assetsfiles.s3.amazonaws.com/project+11/16e_gif.gif" alt="Image">
+                                </div>
+                            </div>
                         <ul class="container">
                             <li>This node publishes the Twist messages on the /cmd_vel topic to control the robot's
                                 motion based on the kinematic model.
@@ -262,7 +285,14 @@
                                 topic.</li>
                             <li>The trajectory is defined by a series of waypoints, each representing a segment of
                                 the figure-eight path. The node calculates and publishes the necessary wheel speeds
-                                to follow these waypoints accurately.</li>
+                                to follow these waypoints accurately.<span class="view-more"
+                                data-target="#modal2">(ViewMore...)</span></li>
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" data-target="#modal2">&times;</span>
+                                        <img src="https://assetsfiles.s3.amazonaws.com/project+11/16g_gif.gif" alt="Image">
+                                    </div>
+                                </div>
                         </ul>
                     </ul>
                 </ol>

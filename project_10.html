@@ -98,7 +98,7 @@
             <div class="container  d-flex flex-column justify-content-center bg-white ptb-75 prl-50">
                 <!-- Intro Section -->
                 <div class="col-lg-12 prl-50 intro-sec">
-                    <div class="container">
+                    <!-- <div class="container">
                         <div class="pb-2 d-flex justify-content-between">
                             <h5><b>Introduction</b></h5>
                             <div class="d-flex skip-content ps-3">
@@ -113,7 +113,7 @@
                                 This comprehensive setup ensures a robust and efficient simulation environment for
                                 testing and development.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Image Section -->
                     <div class="row single-proj-img-section">
                         <div
@@ -123,6 +123,21 @@
                                     alt="Card Image 1">
                             </div>
                         </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            <div class="card-custom-single">
+                                <img data-src="https://assetsfiles.s3.amazonaws.com/project+10/15b_gif.gif"
+                                    class="lazyload" alt="Card Image 1">
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            <div class="card-custom-single">
+                                <img data-src="https://assetsfiles.s3.amazonaws.com/project+10/15c_gif.gif"
+                                    class="lazyload" alt="Card Image 1">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="overlay" id="overlay"></div>
@@ -132,44 +147,47 @@
                         <div class="item"><img class="lazyload"
                                 data-src="https://assetsfiles.s3.amazonaws.com/project+10/15a.png" alt="Popup Image 1">
                         </div>
+                        <div class="item"><img class="lazyload"
+                                data-src="https://assetsfiles.s3.amazonaws.com/project+10/15b_gif.gif"
+                                alt="Popup Image 1">
+                        </div>
+                        <div class="item"><img class="lazyload"
+                                data-src="https://assetsfiles.s3.amazonaws.com/project+10/15c_gif.gif"
+                                alt="Popup Image 1">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Video Section -->
                 <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+10/rec_15.mp4" class="lazyload"
+                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+10/rec_15a.mp4" class="lazyload"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+10/rec_16.mp4" class="lazyload"
+                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/project+10/rec_15b.mp4" class="lazyload"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-
-                <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe
-                        data-src="https://assetsfiles.s3.amazonaws.com/project+10/ROS+project+simulation+-+Checkpoint+15_+ROS2+Control+_+Robotics+%26+ROS+Online+Courses+_+The+Construct+-+Brave+2024-07-18+20-36-44.mp4"
-                        class="lazyload" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-                <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe
-                        data-src="https://assetsfiles.s3.amazonaws.com/project+10/ROS+project+simulation+-+Checkpoint+15_+ROS2+Control+_+Robotics+%26+ROS+Online+Courses+_+The+Construct+-+Brave+2024-07-18+20-39-37.mp4"
-                        class="lazyload" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-
-
 
                 <div class="container bg-white section-blog project-content" id="blog-section">
+                    <div>
+                        <h5><b>Introduction</b></h5>
+                        <!-- <div class="d-flex skip-content ps-3">
+                                <a href="#blog-section">Skip To Content</a>
+                                <i class="fas fa-chevron-down p-1 "></i>
+                            </div> -->
+                    </div>
+                    <div class="container">
+                        <p>This project aims to enhance the simulation and control of a differential drive robot
+                            using the ROS2 framework. The project focuses on migrating URDF descriptions to ROS2,
+                            adding ROS2 control for differential drive in Gazebo, and implementing sensor plugins.
+                            This comprehensive setup ensures a robust and efficient simulation environment for
+                            testing and development.</p>
+                    </div>
                     <h5><b>Objectives</b></h5>
                     <ul>
                         <li>Migrate URDF descriptions to ROS2.</li>
@@ -211,8 +229,14 @@
                             the setup file. After ensuring the code was correctly compiled, the Gazebo simulation was
                             launched using the RB1 robot's launch file. It is important to note that Gazebo might not
                             always start properly on the first attempt; if an error occurred, the process was killed and
-                            relaunched to ensure a smooth start.</p>
-
+                            relaunched to ensure a smooth start.<span class="view-more"
+                                data-target="#modal1">(ViewMore...)</span></p>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-target="#modal1">&times;</span>
+                                <img src="https://assetsfiles.s3.amazonaws.com/project+10/15a.png" alt="Image">
+                            </div>
+                        </div>
                         <h5 class="mt-3"><b>Enabling Differential Drive ROS2 Control</b></h5>
                         <p class="mt-3 container">The next phase focused on enabling the differential drive ROS2 control
                             for the RB1 robot. This involved locating the rb1_ros2_description package and inserting
@@ -222,7 +246,16 @@
                             to spawn the controllers defined in the YAML file. After these modifications, the setup was
                             compiled, sourced, and launched to verify the creation of the velocity topic and ROS2
                             control node. The robot's movement was tested using keyboard teleoperation, ensuring that
-                            the differential drive control was functioning correctly.</p>
+                            the differential drive control was functioning correctly.<span class="view-more"
+                            data-target="#modal2">(ViewMore...)</span></p>
+                            <div id="modal2" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" data-target="#modal2">&times;</span>
+                                    <!-- <img src="https://assetsfiles.s3.amazonaws.com/Project+6/9b_gif.gif" alt="Image"> -->
+                                    <iframe src="https://assetsfiles.s3.amazonaws.com/project+10/rec_15a.mp4" frameborder="0"
+                                    height="100%"></iframe>
+                                </div>
+                            </div>
 
                         <h5 class="mt-3"><b>Implementing the Lifting Unit</b></h5>
                         <p class="mt-3 container">The final development task was to implement a functional lifting unit
@@ -237,8 +270,17 @@
                             <br>
                             Overall, the Process and Development section highlights the structured approach taken to
                             achieve seamless integration of ROS2 control and enhance the RB1 robot's capabilities in
-                            simulation, paving the way for real-world applications.
+                            simulation, paving the way for real-world applications.<span class="view-more"
+                            data-target="#modal3">(ViewMore...)</span>
                         </p>
+                        <div id="modal3" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-target="#modal3">&times;</span>
+                                <!-- <img src="https://assetsfiles.s3.amazonaws.com/Project+6/9b_gif.gif" alt="Image"> -->
+                                <iframe src="https://assetsfiles.s3.amazonaws.com/project+10/rec_15b.mp4" frameborder="0"
+                                height="100%"></iframe>
+                            </div>
+                        </div>
                     </div>
 
                     <h5><b>Results</b></h5>

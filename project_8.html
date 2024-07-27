@@ -99,7 +99,7 @@
             <div class="container  d-flex flex-column justify-content-center bg-white ptb-75 prl-50">
                 <!-- Intro Section -->
                 <div class="col-lg-12 prl-50 intro-sec">
-                    <div class="container">
+                    <!-- <div class="container">
                         <div class="pb-2 d-flex justify-content-between">
                             <h5><b>Introduction</b></h5>
                             <div class="d-flex skip-content ps-3">
@@ -115,7 +115,7 @@
                                 handle dynamic obstacles using advanced navigation strategies.
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Image Section -->
                     <div class="row single-proj-img-section">
                         <div
@@ -132,6 +132,13 @@
                                     alt="Card Image 1">
                             </div>
                         </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-12 mb-4 d-flex justify-content-center card-custom-single-container">
+                            <div class="card-custom-single">
+                                <img data-src="https://assetsfiles.s3.amazonaws.com/Project+8/12c_gif.gif"
+                                    class="lazyload" alt="Card Image 1">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="overlay" id="overlay"></div>
@@ -144,19 +151,43 @@
                         <div class="item"><img class="lazyload"
                                 data-src="https://assetsfiles.s3.amazonaws.com/Project+8/12b.png" alt="Popup Image 1">
                         </div>
+                        <div class="item"><img class="lazyload"
+                                data-src="https://assetsfiles.s3.amazonaws.com/Project+8/12c_gif.gif"
+                                alt="Popup Image 1">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Video Section -->
                 <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
-                    <iframe
-                        data-src="https://assetsfiles.s3.amazonaws.com/Project+8/Checkpoint+12_+Advanced+Navigation.mp4"
-                        class="lazyload" title="YouTube video player" frameborder="0"
+                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/Project+8/rec_12a.MP4" class="lazyload"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="container landing-section-proj-vid d-flex justify-content-center align-items-center pt-20">
+                    <iframe data-src="https://assetsfiles.s3.amazonaws.com/Project+8/rec_12b.MP4" class="lazyload"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <div class="container bg-white section-blog project-content" id="blog-section">
+                    <div>
+                        <h5><b>Introduction</b></h5>
+                        <!-- <div class="d-flex skip-content ps-3">
+                                <a href="#blog-section">Skip To Content</a>
+                                <i class="fas fa-chevron-down p-1 "></i>
+                            </div> -->
+                    </div>
+                    <div class="container">
+                        <p>Following the setup of the navigation system in the previous project, this project
+                            segment focuses on implementing specific task-oriented navigation routes using the
+                            Simple Commander API. The primary goal is to enable the RB-1 robot to autonomously
+                            navigate a warehouse environment, perform specific tasks such as transporting items, and
+                            handle dynamic obstacles using advanced navigation strategies.
+                        </p>
+                    </div>
                     <h5><b>Objectives</b></h5>
                     <ul>
                         <li><b>Program the RB-1 Robot:</b> Enable precise navigational tasks within a warehouse
@@ -193,8 +224,16 @@
                             time within the Nav2 system. Subsequently, a Costmap Filter with a Keepout Mask was created
                             to make the robot avoid an area with cones. The robot then moved to the shipping_position,
                             unloaded the shelf, and returned to the init_position, demonstrating a complete navigation
-                            and shelf-handling cycle.
+                            and shelf-handling cycle.<span class="view-more" data-target="#modal1">(ViewMore...)</span>
                         </p>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-target="#modal1">&times;</span>
+                                <!-- <img src="https://assetsfiles.s3.amazonaws.com/Project+6/9b_gif.gif" alt="Image"> -->
+                                <iframe src="https://assetsfiles.s3.amazonaws.com/Project+8/rec_12a.MP4" frameborder="0"
+                                    height="100%"></iframe>
+                            </div>
+                        </div>
 
                         <h5 class="mt-3"><b>Task 2: Testing with Real Robot</b></h5>
                         <p class="mt-3 container">The next step involved testing the developed navigation system with
@@ -202,8 +241,17 @@
                             and execute the move_shelf_to_ship.py script. The objective was to validate that the robot
                             could properly localize itself, navigate to the loading_position, handle the shelf, avoid
                             obstacles, move to the shipping_position, and return to the init_position. This real-world
-                            validation was crucial to ensure the system's reliability beyond the simulation.
+                            validation was crucial to ensure the system's reliability beyond the simulation.<span
+                                class="view-more" data-target="#modal2">(ViewMore...)</span>
                         </p>
+                        <div id="modal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-target="#modal2">&times;</span>
+                                <!-- <img src="https://assetsfiles.s3.amazonaws.com/Project+6/9b_gif.gif" alt="Image"> -->
+                                <iframe src="https://assetsfiles.s3.amazonaws.com/Project+8/rec_12b.MP4" frameborder="0"
+                                    height="100%"></iframe>
+                            </div>
+                        </div>
                     </div>
 
                     <h5><b>Results</b></h5>
@@ -217,9 +265,14 @@
                     <h5><b>Key Insights</b></h5>
                     <div class="container">
                         <ul>
-                            <li><b>Task-Specific Reconfiguration:</b> Effective task-specific reconfiguration of the robot’s navigation parameters is crucial for adaptive performance in dynamic environments.</li>
-                            <li><b>Sophisticated Operations:</b> The project illustrated the potential for ROS 2-based systems to facilitate sophisticated autonomous operations in industrial applications.</li>
-                            <li><b>Future Enhancements:</b> Future work could focus on optimizing these navigation and interaction processes for a broader range of tasks and environments.</li>
+                            <li><b>Task-Specific Reconfiguration:</b> Effective task-specific reconfiguration of the
+                                robot’s navigation parameters is crucial for adaptive performance in dynamic
+                                environments.</li>
+                            <li><b>Sophisticated Operations:</b> The project illustrated the potential for ROS 2-based
+                                systems to facilitate sophisticated autonomous operations in industrial applications.
+                            </li>
+                            <li><b>Future Enhancements:</b> Future work could focus on optimizing these navigation and
+                                interaction processes for a broader range of tasks and environments.</li>
                         </ul>
                     </div>
                 </div>

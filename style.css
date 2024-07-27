@@ -351,11 +351,23 @@ swiper-slide img {
 
 .landing-section-proj-vid {
     height: 51vh;
+    width: 70% !important;
 }
+
 
 .landing-section-proj-vid iframe {
     height: 50vh;
     width: 100%;
+}
+@media screen and (max-width:768px) {
+    .landing-section-proj-vid {
+        height: auto !important;
+        width: auto !important;
+    }
+    .landing-section-proj-vid iframe {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .landing-img-section{
@@ -1253,6 +1265,85 @@ footer p a {
 
 }
 
+
+/* common pop up img or video */
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50vw;
+    height: 50vh;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 50vw !important ;
+    height: 50vh !important;
+    top: 25%;
+    /* background-color: white; */
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    display: flex;
+    justify-content: center;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.view-more{
+    cursor: pointer;
+    color: #626d86 !important;
+}
+.view-more:hover{
+    color: #4d576b !important;
+}
+.modal-content img{
+    height: 50vh;
+    /* width: 100% !important ; */
+    object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90vw !important ;
+        height: 40vh !important;
+        top: 25%;
+        background-color: rgba(0, 0, 0, 0.3);
+        
+    }
+    /* .modal-content img{
+        height: 40vh;
+        object-fit: contain;
+    } */
+    .view-more{
+        font-size: 14px !important;
+    }
+}
 
 
 /* Contact section */

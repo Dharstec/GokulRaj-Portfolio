@@ -163,3 +163,35 @@ window.addEventListener('resize', function() {
         rightScroll.classList.remove('right-scroll');
     }
 });
+
+// Single project video img popup
+
+document.addEventListener('DOMContentLoaded', function() {
+    const viewMoreElements = document.querySelectorAll('.view-more');
+    const closeElements = document.querySelectorAll('.close');
+
+    viewMoreElements.forEach(element => {
+        element.addEventListener('click', function() {
+            const target = document.querySelector(this.getAttribute('data-target'));
+            if (target) {
+                target.style.display = 'block';
+            }
+        });
+    });
+
+    closeElements.forEach(element => {
+        element.addEventListener('click', function() {
+            const target = document.querySelector(this.getAttribute('data-target'));
+            if (target) {
+                target.style.display = 'none';
+            }
+        });
+    });
+
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
+    }
+});
+
