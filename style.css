@@ -468,7 +468,7 @@ footer p a {
 /* button */
 .button-default {
     background-color: #000000 !important;
-    color: #ffffff;
+    color: #ffffff !important;
     letter-spacing: .1rem;
     border-radius: 23px !important;
     border: none !important;
@@ -655,7 +655,8 @@ footer p a {
 
 .home-card-content {
     height: 100%;
-    max-width: 250px;
+    /* max-width: 250px; */
+    padding: 0px 20px;
     display: grid;
     grid-row: 1fr 3fr;
 }
@@ -667,7 +668,8 @@ footer p a {
 }
 
 .home-card-content-down-para {
-    max-width: 200px;
+    /* max-width: 200px; */
+    width: 100% !important;
     text-align: right;
 }
 
