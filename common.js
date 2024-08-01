@@ -13,18 +13,18 @@
 // }
 
 function simulateProgress() {
-  var progressBar = document.querySelector('.progress-bar');
-  var width = 0;
-  var interval = setInterval(function () {
-    if (width >= 100) {
-      clearInterval(interval);
-      document.getElementById('loader').classList.add('hidden');
-    } else {
-      width++;
-      progressBar.style.width = width + '%';
-      progressBar.setAttribute('aria-valuenow', width);
-    }
-  }, 10);
+    var progressBar = document.querySelector('.progress-bar');
+    var width = 0;
+    var interval = setInterval(function () {
+        if (width >= 100) {
+            clearInterval(interval);
+            document.getElementById('loader').classList.add('hidden');
+        } else {
+            width++;
+            progressBar.style.width = width + '%';
+            progressBar.setAttribute('aria-valuenow', width);
+        }
+    }, 10);
 }
 
 document.addEventListener('DOMContentLoaded', simulateProgress);
@@ -33,20 +33,20 @@ document.addEventListener('DOMContentLoaded', simulateProgress);
 // Project page button filter
 
 function filterCards(category) {
-  var cards = document.querySelectorAll('.card-custom');
-  if (window.innerWidth > 768) {
-      cards.forEach(function (card) {
-          card.classList.remove('hidden');
-      });
-  } else {
-      cards.forEach(function (card) {
-          if (category === 'all' || card.getAttribute('data-category') === category) {
-              card.classList.remove('hidden');
-          } else {
-              card.classList.add('hidden');
-          }
-      });
-  }
+    var cards = document.querySelectorAll('.card-custom');
+    if (window.innerWidth > 768) {
+        cards.forEach(function (card) {
+            card.classList.remove('hidden');
+        });
+    } else {
+        cards.forEach(function (card) {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
 }
 
 // Run filterCards initially to show all cards on larger screens
@@ -54,35 +54,9 @@ filterCards('all');
 
 // Listen for window resize events to update card visibility
 window.addEventListener('resize', function () {
-  filterCards('all'); // Reapply filter based on screen size
+    filterCards('all'); // Reapply filter based on screen size
 });
 
-
-// POP UP image in single project
-// const cards = document.querySelectorAll('.card-custom-single');
-// const popup = document.getElementById('popup');
-// const popupImage = document.getElementById('popupImage');
-// const overlay = document.getElementById('overlay');
-// const closePopup = document.getElementById('closePopup');
-
-// cards.forEach(card => {
-//     card.addEventListener('click', () => {
-//         const imgSrc = card.querySelector('img').src;
-//         popupImage.src = imgSrc;
-//         popup.style.display = 'flex';
-//         overlay.style.display = 'block';
-//     });
-// });
-
-// closePopup.addEventListener('click', () => {
-//     popup.style.display = 'none';
-//     overlay.style.display = 'none';
-// });
-
-// overlay.addEventListener('click', () => {
-//     popup.style.display = 'none';
-//     overlay.style.display = 'none';
-// });
 
 $(document).ready(function() {
   const cards = document.querySelectorAll('.card-custom-single img');
@@ -132,13 +106,34 @@ $(document).ready(function() {
       setTimeout(() => {
           popup.style.display = 'none';
           overlay.style.display = 'none';
-      }, 300); // Match this with the transition duration in CSS
+      }, 300);
   }
 });
 
+// $(document).ready(function () {
+//     var owl = $('#carousel').owlCarousel({
+//         items: 1,
+//         loop: true,
+//         nav: true,
+//         dots: true
+//     });
+
+//     // Show popup on image click
+//     $('.card-custom-single img').on('click', function () {
+//         var index = $(this).data('index');
+//         owl.trigger('to.owl.carousel', [index, 0, true]);
+//         $('#popup, #overlay').fadeIn();
+//     });
+
+//     $('#overlay, #closePopup').on('click', function () {
+//         $('#popup, #overlay').fadeOut(); 
+//     });
+// });
+
+
 
 // home page scroll content
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const leftScroll = document.getElementById('left-scroll');
     const rightScroll = document.getElementById('right-scroll');
     const offsetTop = leftScroll.getBoundingClientRect().top;
@@ -154,7 +149,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     const leftScroll = document.getElementById('left-scroll');
     const rightScroll = document.getElementById('right-scroll');
 
@@ -166,12 +161,12 @@ window.addEventListener('resize', function() {
 
 // Single project video img popup
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const viewMoreElements = document.querySelectorAll('.view-more');
     const closeElements = document.querySelectorAll('.close');
 
     viewMoreElements.forEach(element => {
-        element.addEventListener('click', function() {
+        element.addEventListener('click', function () {
             const target = document.querySelector(this.getAttribute('data-target'));
             if (target) {
                 target.style.display = 'block';
@@ -180,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     closeElements.forEach(element => {
-        element.addEventListener('click', function() {
+        element.addEventListener('click', function () {
             const target = document.querySelector(this.getAttribute('data-target'));
             if (target) {
                 target.style.display = 'none';
@@ -188,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target.classList.contains('modal')) {
             event.target.style.display = 'none';
         }
