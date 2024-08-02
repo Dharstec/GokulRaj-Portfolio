@@ -32,7 +32,7 @@
 <body>
     <div class="loader" id="loader">
         <!-- <p>Loading...</p> -->
-        <h3 class="loader-title"><b>LOADING</b></h3>
+        <h3 class="loader-title"><b>Initializing</b></h3>
         <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
@@ -50,7 +50,7 @@
                     <ul class="navbar-nav mx-auto">
                         <!-- <div class="d-flex justify-content-end align-items-end"> -->
                             <li class="nav-item">
-                                <a class="nav-link link-cont" href="index.html">HOME</a>
+                                <a class="nav-link link-cont active" href="index.html">HOME</a>
                             </li>
                          <!-- <li class="nav-item">
                                 <a class="nav-link link-cont" href="about.html">ABOUT</a>
@@ -95,17 +95,28 @@
         </div> -->
 
         <div class="container-fluid py-5 hero-header">
-            <video autoplay muted loop class="lazyload"
+            <!-- <video autoplay muted loop class="lazyload"
                 data-src="https://assetsfiles.s3.amazonaws.com/Cube+Spin+new.mp4" id="backgroundVideo">
                 <source data-src="https://assetsfiles.s3.amazonaws.com/Cube+Spin+new.mp4" type="video/mp4">
-                <!-- Your browser does not support the video tag. -->
+            </video> -->
+            <video autoplay muted loop class="lazyload"
+            data-src="assets/Cube Spin - home.mp4" id="backgroundVideo">
+                <source data-src="assets/Cube Spin - home.mp4" type="video/mp4">
             </video>
             <div class="container hero-content py-5">
                 <div class="row align-items-center justify-content-center g-5">
                     <div class="col-lg-6 text-center text-lg-start">
                         <h1 class="display-3 text-white animated slideInLeft">Gokhul Raj <br>Ravikumar</h1>
+                        <!-- <div class="typewriter">
+                            <h1 class="display-3 text-white">
+                                <span class="typing-text line1">Gokhul Raj</span>
+                                <br>
+                                <span class="typing-text line2">Ravikumar</span>
+                            </h1>
+                        </div> -->
+                    
                         <p class="text-white animated slideInLeft mb-4 pb-2">Dedicated Robotics Engineer with a solid
-                            foundation in mechanical engineering, software development, automation, and control systems.
+                            foundation in mechanical engineering, software development, automation and control systems.
                             With a comprehensive academic background in mechatronics and robotics, coupled with
                             extensive hands-on experience in industrial robotic systems, demonstrating a strong passion
                             for advancing automation technologies.</p>
@@ -138,10 +149,11 @@
                         in in robotics and automation technologies.
                     </p>
                     <!-- <button class="btn btn-primary button-default">Read More</button> -->
-                    <p>To know more click here to download resume <br> <a href="assets/resume.pdf" download class="btn btn-primary button-default mt-2">Download</a></p>
+                    <p>Download My Resume <br> <a href="assets/resume.pdf" download class="btn btn-primary button-default mt-2">Download</a></p>
                 </div>
                 <div class="col-lg-7 offset-lg-1 col-md-12 image-container section-about-img">
-                    <img src="https://via.placeholder.com/700x700" alt="Placeholder Image">
+                    <!-- <img src="https://via.placeholder.com/700x700" alt="Placeholder Image"> -->
+                    <img src="assets/about-home page.jpg" alt="Placeholder Image">
                 </div>
             </div>
         </div>
@@ -150,17 +162,16 @@
             <div class="row home-cards-section">
                 <div class="home-card col-lg-3 col-md-6 col-sm-12">
                     <div class="home-card-content">
-                        <p class="color-1"><b>Robotics Frameworks and Tools:</b></p>
+                        <p class="color-1 home-card-content-heading"><b>Robotics Frameworks and Tools:</b></p>
                         <div class="d-flex align-items-end home-card-content-down">
                             <!-- <h2>1</h2> -->
                             <p class="home-card-content-down-para">
                                 ROS, ROS2, URDF,<br>
                                 Xacro, Nav2, SLAM,<br>
-                                MoveIt2, Rviz2,<br>
-                                Lidar, Gazebo, <br>
+                                MoveIt2, Rviz2, ROSLIB, <br>
+                                Lidar, Gazebo, AMCL, <br>
                                 Ignition Gazebo, <br>
-                                Simple Commander API,<br>
-                                ROSLIB,AMCL
+                                Simple Commander API <br>
                             </p>
                         </div>
                     </div>
@@ -168,7 +179,8 @@
                 <div class="home-card  col-lg-3 col-md-6 col-sm-12">
                     <div class="home-card-content">
                         <p class="color-1"><b>Programming Languages and Libraries: </b></p>
-                        <div class="d-flex align-items-end home-card-content-down">
+                        <!-- .home-card-content-heading -->
+                        <div class="home-card-content-down">
                             <!-- <h2>1</h2> -->
                             <p class="home-card-content-down-para">
                                 C++, <br>
@@ -184,7 +196,7 @@
                 <div class="home-card  col-lg-3 col-md-6 col-sm-12">
                     <div class="home-card-content">
                         <p class="color-1"><b>Development tools: </b></p>
-                        <div class="d-flex align-items-end home-card-content-down">
+                        <div class="home-card-content-down">
                             <!-- <h2>1</h2> -->
                             <p class="home-card-content-down-para">
                                 Docker Containerization, <br>
@@ -201,14 +213,15 @@
                 <div class="home-card  col-lg-3 col-md-6 col-sm-12">
                     <div class="home-card-content">
                         <p class="color-1"><b>Others:</b></p>
-                        <div class="d-flex align-items-end home-card-content-down">
+                        <div class="home-card-content-down">
                             <!-- <h2>1</h2> -->
                             <p class="home-card-content-down-para">
                                 PID controller,  <br>
                                 Computer Vision, <br>
                                 OpenCV, GUI, <br>
                                 MS Office,  <br>
-                                Linux operating system [Ubuntu]
+                                Linux operating system <br>
+                                [Ubuntu]
                             </p>
                         </div>
                     </div>
@@ -293,6 +306,7 @@
                                 Coursera
                             </p>
                         </div>
+                        
 
                     </div>
                 </div>

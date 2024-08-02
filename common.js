@@ -190,3 +190,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+// Typing effect
+document.addEventListener('DOMContentLoaded', () => {
+    const element = document.querySelector('.typing-text');
+    setTimeout(() => {
+        element.style.animation = 'typing 3.5s steps(30, end), blink-caret .5s step-end infinite';
+    }, 500); // 500ms delay before starting the animation
+});
+
+
+// linkActive
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPath = window.location.pathname.split("/").pop(); // Get current file name
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+});
+
+
+
