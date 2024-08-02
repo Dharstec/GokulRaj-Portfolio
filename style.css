@@ -896,7 +896,8 @@ footer p a {
 
 .card-custom img {
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 300px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
     transform-origin: center center;
