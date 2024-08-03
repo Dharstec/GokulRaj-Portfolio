@@ -33,14 +33,10 @@ a:hover {
     color: #4d576b;
 }
 
-.git-link {
-    color: #626d86 !important;
-    font-weight: 500;
-}
-
-.git-link:hover {
-    color: #333333 !important;
-    text-decoration: none;
+a.git-link {
+    z-index: 999;
+    color: #ffffff !important;
+    cursor: pointer !important;
 }
 
 td {
@@ -190,12 +186,13 @@ hr.container {
     font-weight: 600 !important;
 }
 
-.nav-link.active {  
+.nav-link.active {
     font-weight: bold;
 }
 
 .nav-link {
-    font-weight: normal; /* Set a default weight */
+    font-weight: normal;
+    /* Set a default weight */
 }
 
 /* Additional specificity if needed */
@@ -360,7 +357,18 @@ swiper-slide img {
     width: 100vw !important;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    color: #ffffff;
+}
 
+.landing-content h5 a {
+    cursor: pointer !important;
+    color: #ffffff !important;
+    transition: all 0.3s;
+}
+
+.landing-content h5 a:hover {
+    color: #eef0f6 !important;
+    text-decoration: underline !important;
 }
 
 .landing-section-proj-vid {
@@ -390,19 +398,54 @@ swiper-slide img {
     position: relative;
     height: 60vh;
     background-color: #ffffff;
+    overflow: hidden;
 }
 
 .landing-img-section img {
     position: absolute;
-    opacity: 0.65;
+    opacity: 0.75;
     width: 100%;
     height: 60vh;
     object-fit: cover;
-    mix-blend-mode: overlay;
+    /* mix-blend-mode: overlay; */
 }
 
 .landing-content {
+    z-index: 3;
+    position: relative;
+}
+
+.landing-video {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.overlay-landing-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 10;
+    background-color: black;
+    opacity: 0.7;
+    /* Adjust opacity as needed */
+}
+
+.landing-content-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white !important;
 }
 
 @media screen and (max-width:768px) {
@@ -718,20 +761,17 @@ footer p a {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    height: 70vh;
+    height: 60vh;
 }
 
 /* Hide the scroll bar but allow scrolling */
 .right-scroll::-webkit-scrollbar {
     display: none;
-    /* For Chrome, Safari, and Opera */
 }
 
 .right-scroll {
     -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
     scrollbar-width: none;
-    /* For Firefox */
 }
 
 
