@@ -565,14 +565,6 @@ footer p a {
 
 /* Home page */
 
-/* .hero-header {
-    height: 100vh;
-    background: url(assets/Landing\ gif.gif);
-    background-color: #000000 !important;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 .right-landing-gif {
     display: flex;
     justify-content: center;
@@ -585,13 +577,6 @@ footer p a {
     width: 300px;
 }
 
-/* .hero-header img {
-    animation: imgRotate 50s linear infinite;
-} */
-
-/* .hero-content.row{
-    height: 100vh;
-} */
 
 /* Check landing video */
 .hero-header {
@@ -603,18 +588,6 @@ footer p a {
     object-fit: contain; */
     overflow: hidden;
 }
-
-/* #backgroundVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw !important;
-    min-height: 100vh;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-} */
 
 #backgroundVideo {
     position: absolute;
@@ -630,21 +603,23 @@ footer p a {
     margin-top: 150px !important;
 }
 
+
+/* .hero-content {
+    height: 50vh;
+    width: 50vw !important;
+} */
+
+.new-header-container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+
 @media screen and (max-width:998px) {
 
-    /* #backgroundVideo {
-        min-width: 100% !important;
-        min-height: 100% !important;
-        width: auto !important;
-        height: auto !important;
-    } */
-    /* #backgroundVideo {
-        transform: translate(-50%, -50%) rotate(-90deg);
-        width: 100vh !important;
-        height: 100vw!important;
-        width: auto !important;
-        height: auto !important;
-    } */
     #backgroundVideo {
         transform: rotate(-90deg);
         top: 50%;
@@ -660,9 +635,22 @@ footer p a {
         flex-direction: column-reverse !important;
     }
 
-    .text-lg-start {
-        margin-top: -30px !important;
+    .new-header-container{
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
     }
+    /* .new-header-container h1 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .new-header-container p {
+        margin-top: 50px;
+        font-size: 20px;
+    } */
 }
 
 .hero-header .container {
@@ -828,6 +816,7 @@ footer p a {
     .left-scroll {
         padding: 20px !important;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -863,14 +852,20 @@ footer p a {
 }
 
 @media screen and (max-width:427px) {
-    .hero-header h1 {
+    .row.text-lg-start{
+        margin-top: 50px !important;
+    }
+
+    .hero-header  h1 {
+        margin-top: 20px !important;
         font-size: 24px;
         font-weight: 500;
     }
 
     .hero-header p {
-        margin-top: 50px;
+        margin-top: 10px;
         font-size: 14px;
+        /* text-align: justify; */
     }
 
     .left-right h2 {
@@ -889,14 +884,21 @@ footer p a {
 }
 
 @media screen and (min-width:427px) and (max-width:768px) {
-    .hero-header h1 {
-        font-size: 32px;
+    .hero-header  h1 {
+        margin-bottom: 30px !important;
+        font-size: 28px;
         font-weight: 500;
     }
 
     .hero-header p {
-        margin-top: 50px;
-        font-size: 20px;
+        margin-top: 10px;
+        font-size: 16px;
+        /* text-align: justify; */
+    }
+
+    .hero-header{
+        padding: 0px !important;
+        /* text-align: justify !important; */
     }
 
     .left-right h2 {
@@ -909,6 +911,25 @@ footer p a {
         font-weight: 500;
     }
 
+}
+
+@media screen and (min-width:768px) and (max-width:998px) {
+    .hero-header  h1 {
+        margin-bottom: 30px !important;
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .hero-header p {
+        margin-top: 10px;
+        font-size: 16px;
+        /* text-align: justify; */
+    }
+
+    .hero-header{
+        padding: 0px !important;
+        /* text-align: justify !important; */
+    }
 }
 
 
@@ -929,7 +950,7 @@ footer p a {
     z-index: 10;
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:998px) {
     .overlay-container {
         top: 20px;
         padding: 40px 10px 40px 10px !important;

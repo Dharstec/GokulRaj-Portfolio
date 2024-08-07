@@ -1,17 +1,3 @@
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > 50) {
-//     $('.navbar').addClass('scrolled');
-//   } else {
-//     $('.navbar').removeClass('scrolled');
-//   }
-// });
-
-// function showSingleProjDets(id) {
-//   const url = new URL('singleProjectDets.html', window.location.origin);
-//   url.searchParams.append('id', id);
-//   window.location.href = url.toString();
-// }
-
 function simulateProgress() {
     var progressBar = document.querySelector('.progress-bar');
     var width = 0;
@@ -24,7 +10,7 @@ function simulateProgress() {
             progressBar.style.width = width + '%';
             progressBar.setAttribute('aria-valuenow', width);
         }
-    }, 10);
+    }, 1);
 }
 
 document.addEventListener('DOMContentLoaded', simulateProgress);
@@ -109,28 +95,6 @@ $(document).ready(function() {
       }, 300);
   }
 });
-
-// $(document).ready(function () {
-//     var owl = $('#carousel').owlCarousel({
-//         items: 1,
-//         loop: true,
-//         nav: true,
-//         dots: true
-//     });
-
-//     // Show popup on image click
-//     $('.card-custom-single img').on('click', function () {
-//         var index = $(this).data('index');
-//         owl.trigger('to.owl.carousel', [index, 0, true]);
-//         $('#popup, #overlay').fadeIn();
-//     });
-
-//     $('#overlay, #closePopup').on('click', function () {
-//         $('#popup, #overlay').fadeOut(); 
-//     });
-// });
-
-
 
 // home page scroll content
 window.addEventListener('scroll', function () {
