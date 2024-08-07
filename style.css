@@ -609,7 +609,7 @@ footer p a {
     width: 50vw !important;
 } */
 
-.new-header-container{
+.new-header-container {
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -635,13 +635,14 @@ footer p a {
         flex-direction: column-reverse !important;
     }
 
-    .new-header-container{
+    .new-header-container {
         height: 85vh;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         width: 100%;
     }
+
     /* .new-header-container h1 {
         font-size: 32px;
         font-weight: 500;
@@ -852,11 +853,11 @@ footer p a {
 }
 
 @media screen and (max-width:427px) {
-    .row.text-lg-start{
+    .row.text-lg-start {
         margin-top: 50px !important;
     }
 
-    .hero-header  h1 {
+    .hero-header h1 {
         margin-top: 20px !important;
         font-size: 24px;
         font-weight: 500;
@@ -876,6 +877,7 @@ footer p a {
     .left-right h3 {
         font-size: 22px;
         font-weight: 500;
+        text-align: left;
     }
 
     .left-right p {
@@ -884,7 +886,7 @@ footer p a {
 }
 
 @media screen and (min-width:427px) and (max-width:768px) {
-    .hero-header  h1 {
+    .hero-header h1 {
         margin-bottom: 30px !important;
         font-size: 28px;
         font-weight: 500;
@@ -896,7 +898,7 @@ footer p a {
         /* text-align: justify; */
     }
 
-    .hero-header{
+    .hero-header {
         padding: 0px !important;
         /* text-align: justify !important; */
     }
@@ -914,7 +916,7 @@ footer p a {
 }
 
 @media screen and (min-width:768px) and (max-width:998px) {
-    .hero-header  h1 {
+    .hero-header h1 {
         margin-bottom: 30px !important;
         font-size: 28px;
         font-weight: 500;
@@ -926,7 +928,7 @@ footer p a {
         /* text-align: justify; */
     }
 
-    .hero-header{
+    .hero-header {
         padding: 0px !important;
         /* text-align: justify !important; */
     }
@@ -1502,6 +1504,28 @@ footer p a {
 
 
 /* Contact section */
+
+.mobile-contact {
+    display: none;
+}
+.desktop-contact {
+    display: block;
+}
+
+
+/* Show the mobile-contact container and hide the desktop-contact container for screens smaller than tablet size */
+@media (max-width: 767px) {
+    .desktop-contact {
+        display: none !important;
+    }
+
+    .mobile-contact {
+        display: block !important;
+    }
+    .mobile-contact img{
+        object-fit: contain;
+    }
+}
 
 .contact-section {
     padding-top: 80px;
